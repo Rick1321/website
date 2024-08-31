@@ -1,0 +1,460 @@
+<html>
+   <meta charset="UTF-8">
+          <h1 style="font-size:18px;" >𝙈𝙤𝙣𝙚𝙮 𝙋𝙧𝙞𝙣𝙩𝙞𝙣𝙜 𝘾𝙤. </h1>
+          
+          
+      <style>
+      .button.red{
+        background-color: red;
+        color: white;
+        cursor: pointer;
+        font-size: 12px;
+        
+      }
+      
+      .button.norm{
+        cursor: pointer;
+        font-size: 9;
+      
+      }
+      .button.norm2{
+        cursor: pointer;
+        font-size: 8;
+      
+      }
+      
+      #fireWorkerButton{
+        display: none;
+        font-size: 12px;
+      }
+      
+      #demolishFactoryButton{
+        display: none;
+        font-size: 12px;
+      }
+      #commandInput{
+        margin-top: 10px;
+      }
+      #demolishBankButton{
+        display: none;
+        font-size: 12px;
+      }
+      </style>
+      
+      
+      
+      <script> 
+      
+      
+      //VARIABLES
+      var money = 0;
+      var workers = 0;
+      var moneyMultiplier = 1;
+      var multiplierCost = 100;
+      var clicks = 1;
+      var workerCost = 10;
+      var lifeTimeMoney = 0;
+      var factorys = 0;
+      var factoryCost = 1000;
+      var factoryCosts = [];
+      var bankCosts = [];
+      var banks = 0;
+      var bankCost = 10000;
+      var MoneyVariables = " " ;
+      var seconds = 0;
+      var minutes = 0;
+      var hours = 0;
+      var moneyRobbed = 0;
+      
+      function TimeSeconds(){
+        seconds += 1;
+        
+       updateThese();
+       
+      }
+      
+      function TimeMinutes(){
+        if (seconds >= 60){
+          seconds -= 60;
+          minutes += 1;
+          
+          updateThese();
+        }
+      }
+        function TimeHours(){
+        if (minutes >= 60){
+          minutes -= 60;
+          hours += 1;
+
+        updateThese();
+      }
+        }
+      function makeMoney(){
+            money += moneyMultiplier;
+            clicks = moneyMultiplier;
+            lifeTimeMoney += moneyMultiplier;
+           
+
+              updateThese();
+
+            
+            
+              }
+      
+      function hireWorker(){
+        if (money >= workerCost){
+          workers = workers + 1;
+          money = money - workerCost;
+          workerCost = workerCost * 2;
+          
+
+          updateThese();
+          
+            }
+        if(workers > 0){
+            document.getElementById("fireWorkerButton").style.display = "block";
+            updateThese();
+        }
+    }
+          
+      
+      
+      function workersMakesMoney(){
+        if(workers >= 1){
+          money = money + (workers * moneyMultiplier);
+          lifeTimeMoney += (workers * moneyMultiplier);
+          
+          updateThese();
+        }
+  }
+      
+      function FactoryMakesMoney(){
+        if (factorys >= 1){
+          money = money + (factorys + 12 * moneyMultiplier);
+          lifeTimeMoney += (factorys + 12 * moneyMultiplier);
+
+          updateThese();
+
+        }
+        
+        
+      }
+      
+      
+
+
+      function buyMultiplier(){
+        if(money >= multiplierCost){
+          moneyMultiplier *= 1.6;
+          money -= multiplierCost;
+          multiplierCost = multiplierCost * 1.8;
+          clicks = moneyMultiplier;
+          
+          updateThese();
+          
+          }
+      }
+      
+     function formatNumberWithCommas(number) {
+    // Convert number to a string
+    const parts = number.toString().split('.');
+    
+    // Format the integer part with commas
+    parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+
+    // Return the formatted number
+    return parts.join('.');
+      }
+      
+      function updateThese(){
+          
+          let moneyDisplay = money;
+          let moneySufix = " ";
+          
+          if (money <= 1000){
+            moneyDisplay = (money).toFixed(0);
+            moneySufix = "";
+            
+          }else if (money < 1000000){
+            moneyDisplay = (money / 1000 ).toFixed(3);
+            moneySufix = "K    🥉";
+           
+          }else if (money < 1000000000){
+            moneyDisplay = (money / 1000 ).toFixed(3);
+            moneySufix = "M    🏅";
+            
+          }else if (money < 1000000000000){
+            moneyDisplay = (money / 1000 ).toFixed(3);
+            moneySufix = "B    🎖";
+            
+          }else if (money < 1000000000000000){
+            moneyDisplay = (money / 1000 ).toFixed(3);
+            moneySufix = "T    🎖🎖";
+
+          }else if (money < 1000000000000000000){
+            moneyDisplay = (money / 1000 ).toFixed(3);
+            moneySufix = "Qd    🎖🎖🎖";
+          
+            
+          }
+          
+          if (workers == 0){
+            document.getElementById("fireWorkerButton").style.display = "none";
+        
+        }
+          
+          if(workers > 0){
+            document.getElementById("fireWorkerButton").style.display = "block";
+        }
+        
+          if (factorys == 0){
+            document.getElementById("demolishFactoryButton").style.display = "none";
+        
+        }
+          
+          if(factorys > 0){
+            document.getElementById("demolishFactoryButton").style.display = "block";
+        }
+        
+        if (banks == 0){
+            document.getElementById("demolishBankButton").style.display = "none";
+        
+        }
+          
+          if(banks > 0){
+            document.getElementById("demolishBankButton").style.display = "block";
+        }
+        
+          document.getElementById("no_of_Multiplier").innerHTML = Math.round(moneyMultiplier * 10) / 10;
+          document.getElementById("multiplierCost").innerHTML = (formatNumberWithCommas(Math.round(multiplierCost)));
+          document.getElementById("no_Clciks").innerHTML = (formatNumberWithCommas(Math.round(clicks * 1)));
+          document.getElementById("workerCost").innerHTML = (formatNumberWithCommas(Math.round(workerCost)));
+          document.getElementById("no_of_money").innerHTML = (formatNumberWithCommas(moneyDisplay + moneySufix));
+          document.getElementById("no_of_workers").innerHTML = (formatNumberWithCommas(workers));
+          document.getElementById("no_of_banks").innerHTML = (formatNumberWithCommas(banks));
+          document.getElementById("factoryCost").innerHTML = (formatNumberWithCommas(Math.round(factoryCost)));
+          document.getElementById("bankCost").innerHTML = (formatNumberWithCommas(Math.round(bankCost)));
+          document.getElementById("no_of_factorys").innerHTML = (formatNumberWithCommas(Math.round(factorys)));
+          document.getElementById("lifeTimeMoney").innerHTML = (formatNumberWithCommas(Math.round(lifeTimeMoney)));
+          document.getElementById("no_of_Seconds").innerHTML = seconds;
+          document.getElementById("no_of_Minutes").innerHTML = minutes;
+          document.getElementById("no_of_Hours").innerHTML = hours;
+          document.getElementById("robbed").innerHTML = robbedQ;
+          document.getElementById("robbedLost").innerHTML = (formatNumberWithCommas(Math.round(moneyRobbed)));
+
+      }
+      
+      function executeCommand(){
+        var command = document.getElementById("commandInput").value;
+        
+        if (command == "Money500"){
+          money = money + 500;
+          document.getElementById("commandInput").value = " ✅  Recieved $500 ✅ ";
+          updateThese();
+
+        }
+        
+        if (command == "Worker1"){
+          workers = workers + 5;
+          document.getElementById("commandInput").value = " ✅  Recieved 1 worker! ✅ ";
+          updateThese();
+        }
+        
+        if(command == "Factory1"){
+          factorys = factorys + 5;
+          document.getElementById("commandInput").value = " ✅  Recieved 1 factory!  ✅ ";
+          updateThese();
+        }
+        
+        if(command == "Money10k"){
+          money = money + 10000;
+          document.getElementById("commandInput").value = "✅  Recieved 10k ✅  ";
+          updateThese();
+        
+        } 
+      }
+      
+        function BuildFactory(){
+          if(money >= factoryCost){
+            money -= factoryCost;
+            factoryCosts.push(factoryCost);
+            factoryCost = factoryCost * 1.2;
+            factorys = factorys + 1;
+          
+          updateThese();
+
+        }
+        if(factorys > 0){
+            document.getElementById("demolishFactoryButton").style.display = "block";
+        }
+      
+  }
+  
+            function fireWorker(){
+        if (workers >= 1){
+          workers = workers - 1;
+          money = money + (workerCost / 2);
+          workerCost -= workerCost / 2;
+          
+          updateThese();
+      
+      if (workers == 0){
+        document.getElementById("fireWorkerButton").style.display = "none";
+        
+        }
+        
+      }
+}
+      
+      function demolishFactory(){
+        if (factorys >= 1){
+          factorys = factorys - 1;
+          var lastFactoryCost = factoryCosts.pop();
+          money = money + (lastFactoryCost / 2);
+          factoryCost = lastFactoryCost - 1.1 + 2;
+          
+          updateThese();
+        
+        
+          if (factorys == 0){
+        document.getElementById("demolishFactoryButton").style.display = "none";
+        updateThese();
+
+        }
+        
+      }
+  }
+      function demolishBank(){
+        if(banks >= 1){
+          banks = banks - 1;
+          var lastBankCost = bankCosts.pop();
+          money = money + (lastBankCost / 2);
+          bankCost = lastBankCost - 1.1 + 1;
+
+          updateThese();
+        }
+          if (banks == 0){
+            document.getElementById("demolishBankButton").style.display = "none";
+          
+        }
+      }
+      
+      function buildBank(){
+        if (money >= bankCost){
+            money -= bankCost;
+            bankCosts.push(bankCost);
+            bankCost = bankCost * 1.2;
+            banks = banks + 1;
+            
+
+            updateThese();
+        }
+            if (banks > 0){
+              document.getElementById("demolishBankButton").style.display = "block";
+            
+        }
+          
+      }
+      
+      function bankMakesMoney(){
+        if(banks >= 1){
+          money = money + (banks + 56 * moneyMultiplier);
+          lifeTimeMoney += (banks + 56 * moneyMultiplier);
+          
+          updateThese();
+        }
+      }
+      
+      function getRobbed(){
+        var rand =  Math.floor(Math.random() * (352 - 349 + 1)) + 349;
+        
+        if (rand == 350){
+          money -= money / 2;
+          moneyRobbed -= money / 2;
+          robbedQ = "you were robbed $";
+          
+          updateThese();
+          
+        }else{
+          moneyRobbed += 0;
+          updateThese();
+        }
+      }
+      
+      
+      function start(){
+        setInterval(workersMakesMoney, 1800);
+        setInterval(FactoryMakesMoney, 2500);
+        setInterval(bankMakesMoney, 3600);
+        setInterval(TimeSeconds, 1000);
+        setInterval(TimeMinutes, 5);
+        setInterval(TimeHours, 5);
+        setInterval(getRobbed, 60000);
+        updateThese();
+      
+      
+      }
+      
+      start();
+      
+	    </script>
+	      
+	      
+	      <body>
+	        
+      <p style="font-size: 13px;" >Cash: $ <span id="no_of_money">0</span> <span id="robbed"> </span> <span id="robbedLost"> </span> </p>
+      <button style="background-color: lightgreen;" class="button norm" onclick="makeMoney()"> 💸 Print money </button>
+      
+      <p style="font-size: 12px; "=================</p>
+      
+      <button class="button norm" onclick="hireWorker()">  Buy Money Printer $<span id="workerCost">10</span> </button>
+      
+      <button class="button norm" onclick="BuildFactory()"> 🏭 Build Factory $<span id="factoryCost">1000</span> </button>
+      
+      <button class="button norm" onclick="buildBank()"> 🏦 Build Bank $<span id="bankCost">10,000</span> </button>
+
+
+      <button class="button norm" onclick="buyMultiplier()">📈 Multiplier of 1.5x for $<span id="multiplierCost">100</span> </button>
+
+            
+      
+      <p style="font-size: 14px; ">🏆Stats: </p>
+      
+      <p style="font-size: 12px; ">=================</p> 
+      
+      <p style="font-size: 12px; ">📠Money Printers:  <span id="no_of_workers">0</span> </p>
+      <p style="font-size: 12px; ">🏭Factorys:  <span id="no_of_factorys">0</span> </p>
+      <p style="font-size: 12px; ">🏦Banks: <span id="no_of_banks">0</span> </p>
+      <p style="font-size: 12px; ">💰Cash Earned: $ <span id="lifeTimeMoney">0</span>  </p>
+      <p style="font-size: 12px; ">🖱️Money Per Click: x<span id="no_Clciks">1</span> </p>
+      <p style="font-size: 12px; ">🔥Multiplier: x<span id="no_of_Multiplier">1</span> </p>
+      <p style="font-size: 12px; ">⏰Time Played Sec: <span id="no_of_Seconds">0</span> Min: <span id="no_of_Minutes">0</span> Hrs: <span id="no_of_Hours">0</span> </p>
+      
+      </body>
+      <p style="font-size: 12px; ">=================</p>
+      
+      <p style="font-size: 15px; ">Codes: </p>
+      
+      <body>
+          <button style="font-size: 9px;" class="button red" onclick="fireWorker()" id="fireWorkerButton">  Destroy printer x1 </button> 
+          
+           <button style="font-size: 9px;" class="button red" onclick="demolishFactory()" id="demolishFactoryButton"> Demolish factory  x1 </button> 
+           
+           <button style="font-size: 9px;" class="button red" onclick="demolishBank()" id="demolishBankButton"> Demolish bank  x1 </button> 
+              
+              <input class="button norm2" type="text" id="commandInput" placeholder="type code here.">
+              <button class="button norm2" onclick="executeCommand()" >Execute Command </button>
+              
+              
+      </body>
+    
+  </html>
+  
+  
+  
+  
+  
+  
+  
+  
+  
