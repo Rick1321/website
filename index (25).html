@@ -1,0 +1,971 @@
+<html>
+   <meta charset="UTF-8">
+        <link href="styles1.css" rel="stylesheet" type="text/css"/>
+          <script src="script1.js"> </script>
+          
+    <head>
+      
+      </head>
+    <style>
+    
+    .button.red{
+        background-color: red;
+        color: white;
+        cursor: pointer;
+        font-size: 12px;
+        
+      }
+       .woodTexture{
+        position: absolute;
+        right: 0%;
+        width: 100%;
+        height: 100%;
+        aspect-ratio: auto;
+      }
+        .woodTexture2{
+        position: absolute;
+        right: 5%;
+        width: 100%;
+        height: 100%;
+        transform: rotate(180deg);
+        aspect-ratio: auto;
+      }
+      
+
+      
+      .button.norm{
+        cursor: pointer;
+        font-size: 7px;
+        height: 23px;
+      
+      }
+      .button.norm2{
+        cursor: pointer;
+        font-size: 7px;
+        height: 20px;
+        width: 88px;
+        background-color: #cfcfcf;
+        
+      
+      }
+      .button.norm3{
+        cursor: pointer;
+        font-size: 7px;
+        height: 20px;
+        width: 45px;
+        background-color: #cfcfcf;
+      
+      }
+      #fireWorkerButton{
+        display: none;
+        font-size: 8px;
+        position: absolute;
+        right: 4%;
+        top: 139%;
+        width: 54px;
+        height: 25px;
+        
+      }
+      #SpeedUpgradeDisplay{
+        display: none;
+      }
+      
+      #demolishFactoryButton{
+        display: none;
+        font-size: 8px;
+        position: absolute;
+        right: 4%;
+        top: 252%;
+        width: 54px;
+        height: 25px;
+      }
+      #commandInput{
+        margin-top: 10px;
+      }
+      #demolishBankButton{
+        display: none;
+        font-size: 8px;
+        position: absolute;
+        right: 4%;
+        top: 362%;
+        width: 54px;
+        height: 25px;
+      }
+      
+.admin{/*tpye code here box1 */
+  position: absolute;
+  right:46%;
+  top: 1600%;
+  height: 15%; 
+  color: #d9ad27;
+
+  
+}
+
+.admin2{/*execute command  box1 */
+  position: absolute;
+  height: 25px;
+  font-size: 8px;
+  right:30%;
+  top: 1632%;
+  color: #d9ad27;
+
+  
+}
+
+.img2Size{/*Upgrade image on speed upgrade*/
+  position: absolute;
+  right: 77%;
+  top: 20%;
+  height: 18px;
+  width: 17px;
+  mix-blend-mode: color-burn;
+  
+  
+  
+  
+}
+.img1Size{/*click Image on print money   */
+  position: absolute;
+  right: 20%;
+  top: 56%;
+  height: 29px;
+  width: 25px;
+  transform: rotate(330deg);
+  
+}
+.cashDisplay{ /*Cash Display on left of screen */
+  position: absolute;
+  top: 63%;
+  right: 226%;
+  width: 206px;
+  
+  
+}
+
+.StatsDisplayBox{/* Stats box backrgound*/
+    background-color: white;
+    width: 36px;
+    height: 18px;
+    font-size: 14px;
+    position: absolute;
+    top: 3%;
+    right: 76%;
+    cursor: pointer;
+}
+.statbut{ /*Stats button position */
+  position: absolute;
+  right: 102%;
+  top: 139%;
+  background-color: lightgray;
+  font-weight: bold;
+  
+}
+.stats{/*Stats box handler position*/
+  background-color: white;
+  position: absolute;
+  right: 102%;
+  top: 218%;
+  width: 160px;
+  text-align: center;
+  border-radius: 4px;
+  border: 2px solid black;
+  display: none;
+  color: black;
+  
+  
+}
+.backgroundBoxTitle{/* the yellow box behind title */
+  background-color: #d9ad27;
+  position: absolute;
+  width: 566px;
+  height: 29px;
+  top: 0%;
+  right: 100%;
+  
+}
+.codeBox{/* gray box that holds enter cmd  */
+  background-color: #989794;
+  position: absolute;
+  top: 1600%;
+  width: 259px;
+  height: 40px;
+  right: 0%;
+  color: #989794;
+}
+.box{/* store blue box */
+  background-color: #257881;
+  width: 270px;
+  margin: 2px;
+  height: 30px;
+  position: absolute;
+  right: 0%;
+  top: 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+.sep{/* store box  underneeth*/
+  position: absolute;
+  top: 29px;
+  height: 11px;
+  width: 270px;
+  color: #986a14;
+  
+}
+.separator2{
+  background-color: black;
+  position: absolute;
+  width: 258px;
+  height: 11px;
+  right: 0%;
+  top: 1567%;
+  font-size: 3px;
+}
+.floor3{/* Floor piece under print money*/
+  position: absolute;
+  top: 1726%;
+  right: 265px;
+  width: 570px;
+  
+  
+}
+
+.floor{/* roof piece under title*/
+  position: absolute;
+  top: 97%;
+  right: 272px;
+  width: 570px;
+  height: 10px;
+  color: #706d6d;
+}
+
+.floor2{/* floor piece under gray cmd box*/
+  position: absolute;
+  top: 1726%;
+  right: 0%;
+  width: 257px;
+  
+  
+}
+.wall2{
+  position: absolute;
+  right: 309%;
+  top: 1%;
+  width: 15px;
+  height: 540px;
+  
+  
+}
+.wall{
+  position: absolute;
+  right: 95%;
+  top: 1%;
+  height: 541px;
+  width: 15px;
+  
+  
+}
+
+
+.container1{/* Money Printer $10*/
+  position: absolute; 
+  height: 35px; 
+  width: 260px;
+  align-items: center; 
+  right: 0%;
+  top: 120%;
+  background-color: #b4b496;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 9px;
+  cursor: pointer;
+  margin: 1px; 
+}
+
+.container22{/* Build factory $1000*/
+  position: absolute; 
+  height: 35px; 
+  width: 260px;
+  align-items: center; 
+  right: 0%;
+  top: 231%;
+  background-color: #b4b496;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 9px;
+  cursor: pointer;
+  margin: 1px; 
+}
+.container3{/* Build Bank $10,000*/
+  position: absolute; 
+  height: 35; 
+  width: 260px;
+  align-items: center; 
+  right: 0%;
+  top: 344%;
+  background-color: #b4b496;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 9px;
+  cursor: pointer;
+  margin: 1px; 
+} 
+
+.container4{/* Mutiplier x1.5 $250*/
+  position: absolute; 
+  height: 35px; 
+  width: 260px;
+  align-items: center; 
+  right: 0%;
+  top: 455%;
+  background-color: #b4b496;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 9px;
+  cursor: pointer;
+  margin: 1px; 
+}
+.container5{
+  position: absolute; 
+  height: 25px; 
+  width: 76px;
+  align-items: center; 
+  right: 67%;
+  top: 139%;
+  background-color: #4ac739;
+  color: white;
+  font-weight: bold;
+  font-size: 7px;
+  cursor: pointer;
+  padding-left: 16px;
+  
+}
+
+.title{/* Money Prining Co. Title*/
+  position: absolute;
+  text-align: right;
+  top: 0%;
+  right: 35%;
+  width: 1200px;
+  height: 20px;
+  line-height: 18px;
+  padding-left: 400px;
+  color: black;
+  
+}
+.buttonN {
+  background-color: #5e5b5b;
+  height: 20px;
+  width: 125px;
+  border: 2px white solid;
+  border-radius: 4px;
+  color: #ebe5e5;
+  font-weight: bold;
+  font-size: 9px;
+  cursor: pointer;
+}
+
+.but{
+   
+   position: absolute;
+   right: 187%;
+   top: 670%;
+   text-align: center;
+   background-color: #41c242;
+   font-size: 25px;
+   font-weight: bold;
+   color: black;
+   height: 70px;
+   width: 200px;
+   cursor: pointer;
+   border: 1px solid black;
+   border-radius: 4px;
+   line-height: 65px;
+   box-shadow: 0px 5px 15px;
+}
+
+
+.container2 {
+  position: relative; /* Establishes a positioning context for absolute children */
+  height: 0vh; /* Full viewport height */
+  width: 24%; /* Full width of its parent container */
+  display: flex;
+  align-items: center; /* Vertically center the items */
+  justify-content: flex-end; /* Align items to the right */
+  padding: 0 10px; /* Optional: add some padding on the right */
+  color: #ebe5e5;
+  font-weight: bold;
+  background-color: #5e5b5b;
+  height: 20px;
+  width: 80px;
+  border: 2px white solid;
+  border-radius: 4px;
+  display: flex;
+  align-items: center; /* Center text vertically inside the button */
+  justify-content: center; /* Center text horizontally inside the button */
+  font-size: 8px;
+  margin: 0px; /* Optional: space between buttons */
+}
+body{/* gray background of game*/
+  background-color: #706d6d;
+}
+
+.buttonNN {
+  background-color: #5e5b5b;
+  height: 20px;
+  width: 140;
+  border: 2px white solid;
+  border-radius: 4px;
+  display: flex;
+  color: #ebe5e5;
+  font-weight: bold;
+  
+  justify-content: flex-end; /* Center text horizontally inside the button */
+  font-size: 9px;
+  cursor: pointer;
+  margin: 1px; /* Optional: space between buttons */
+}
+
+
+    
+    </style>
+    
+    
+    
+	      <body>
+
+	  
+
+
+      <div class="box" style="color: white;">Store
+      <div class="floor3"><img src="https://assets.onecompiler.app/42qfkqgru/42qfktqbz/Screenshot%202024-09-01%207.41.32%20PM.png" class="woodTexture"> | </div>
+      <div class="sep"> <img src="https://assets.onecompiler.app/42qfkqgru/42qfktqbz/Screenshot%202024-09-01%207.41.32%20PM.png" class="woodTexture" style="font-size: 5px"> |</div>
+      <div class="wall"> <img src="https://assets.onecompiler.app/42qfkqgru/42qfktqbz/Screenshot%202024-09-01%207.44.52%20PM.png" class="woodTexture"> </div>
+      <div class="floor"><img src="https://assets.onecompiler.app/42qfkqgru/42qfktqbz/Screenshot%202024-09-01%207.41.32%20PM.png" class="woodTexture"> | </div>
+      <div class="wall2"> <img src="https://assets.onecompiler.app/42qfkqgru/42qfktqbz/Screenshot%202024-09-01%207.44.52%20PM.png" class="woodTexture">  </div>
+      <div class="floor2"> <img src="https://assets.onecompiler.app/42qfkqgru/42qfktqbz/Screenshot%202024-09-01%207.41.32%20PM.png" class="woodTexture"> | </div>
+
+  
+      <div> <button  class="but" onclick="makeMoney()">  Print money <img src="https://assets.onecompiler.app/42qfkqgru/42qu7v7p2/clicker-white.png" class="img1Size"> </button> </div>
+      <div class="statbut"> <button onclick="showStatsorHide()" style="font-weight: bold;"> Stats </button> </div>
+      
+
+      <div class="cashDisplay"> <p style="color: white","font-size: 13px;" >Cash: $<span id="no_of_money">0</span> </p> </div>
+      
+      <div class="stats" id="stats">
+        <p style="color: black","font-size: 14px; ">++ 🏆Stats: ++</p>
+       <p style="font-size: 8px; ">📠Money Printers:  <span id="no_of_workers">0</span> </p>
+       <p style="font-size: 8px; ">🏭Factorys:  <span id="no_of_factorys">0</span> </p>
+       <p style="font-size: 8px; ">🏦Banks: <span id="no_of_banks">0</span> </p> 
+      <p style="font-size: 8px; ">💰Cash Earned: $ <span id="lifeTimeMoney">0</span>  </p> 
+       <p style="font-size: 7px; ">🖱️Money Per Click: x<span id="no_Clciks">1</span> </p> 
+       <p style="font-size: 8px; ">🔥Multiplier: x<span id="no_of_Multiplier">1</span> </p> 
+      <p style="font-size: 8px;">⏰Time Played <br>Sec: <span id="no_of_Seconds">0</span> Min: <span id="no_of_Minutes">0</span> Hrs: <span id="no_of_Hours">0</span> </p> 
+      </div>
+      
+
+       <div><button class="container1" onclick="hireWorker()"> Money Printer $ <span id="workerCost">10</span> </button> 
+      
+     <div> <button class="container22" onclick="BuildFactory()"> 🏭 Build Factory $ <span id="factoryCost">1,000</span> </button> 
+      
+      <div> <button class="container3" onclick="buildBank()"> 🏦 Build Bank $ <span id="bankCost">10,000</span> </button> 
+
+
+     <div> <button class="container4" onclick="buyMultiplier()">📈 Multiplier x1.5 $ <span id="multiplierCost">250</span> </button> 
+      
+    <div> <button class="container5" onclick="buyUpgradeSpeed()">Speed upgrade <br>$ <img src="https://assets.onecompiler.app/42qfkqgru/42qfktqbz/Screenshot%202024-09-01%205.25.40%20PM.png" class ="img2Size"><span id="upgradeCost">450</span></button> </div>
+    
+    <div class="codeBox">| </div>
+      
+    <div class="admin"> <input class="button norm2" type="text" id="commandInput" placeholder="type code here."></div>
+    <div class=" admin2"><button class="button norm3" onclick="executeCommand()" >Execute Command </button> </div>
+      
+     <div> <button style="font-size: 9px;" class="button red" onclick="fireWorker()" id="fireWorkerButton">  Destroy printer x1 </button> 
+
+    <div> <button style="font-size: 9px;" class="button red" onclick="demolishFactory()" id="demolishFactoryButton"> Demolish factory  x1 </button> 
+           
+    <div> <button style="font-size: 9px;" class="button red" onclick="demolishBank()" id="demolishBankButton"> Demolish bank  x1 </button> 
+    <div class= separator2> <img src="https://assets.onecompiler.app/42qfkqgru/42qfktqbz/Screenshot%202024-09-01%207.41.32%20PM.png" class="woodTexture"> | </div>
+    <div class="backgroundBoxTitle">  
+    <div h1 class="title" style="font-size:18px;" > 𝙈𝙤𝙣𝙚𝙮 𝙋𝙧𝙞𝙣𝙩𝙞𝙣𝙜 𝘾𝙤. </h1> 
+
+       
+                                                                                  </div>
+                                                                          </div>
+                                                                </div>
+                                                       </div>
+                                              </div>
+                                     </div>
+                              </div>
+                      </div>
+              </div>
+      
+           
+
+
+
+          </div>
+
+  
+      
+            <script>
+      
+
+      
+      
+      
+      //VARIABLES
+      var money = 0;
+      var workers = 0;
+      var moneyMultiplier = 1;
+      var multiplierCost = 250;
+      var clicks = 1;
+      var workerCost = 10;
+      var lifeTimeMoney = 0;
+      var factorys = 0;
+      var factoryCost = 1000;
+      var factoryCosts = [];
+      var bankCosts = [];
+      var banks = 0;
+      var bankCost = 10000;
+      var MoneyVariables = " " ;
+      var seconds = 0;
+      var minutes = 0;
+      var hours = 0;
+      var SpeedUpgradeInt = 0;
+      var speedOne = 800;
+      
+      //var speedTwo = 1500;
+      //var speed3 = 3600;
+      
+      var upgradeCost = 450;
+     // var upgradeCostTwo = 850;
+     // var upgradeCostThree = 1450;
+      
+      var speedOneCount = 1000;
+      //var speedTwoCount = 1000;
+      
+      var finalMathSpeed = speedOne + speedOneCount;
+      //var finalMathSpeedTwo = speedTwo + speedTwoCount;
+
+
+      var workerInterval;
+      var factoryInterval;
+      var bankInterval;
+      
+
+      
+       var div = document.getElementById("stats");
+      var display = 0
+      
+      function showStatsorHide(){
+        if (display === 1){
+          div.style.display = "block";
+          display = 0;
+          
+        } else {
+          
+          div.style.display = "none";
+          display = 1;
+        }
+        
+        
+      }
+      
+      
+      function TimeSeconds(){
+        seconds += 1;
+        
+       updateThese();
+       
+      }
+      
+      function TimeMinutes(){
+        if (seconds >= 60){
+          seconds -= 60;
+          minutes += 1;
+          
+          updateThese();
+        }
+      }
+        function TimeHours(){
+        if (minutes >= 60){
+          minutes -= 60;
+          hours += 1;
+
+        updateThese();
+      }
+        }
+      function makeMoney(){
+            money += moneyMultiplier;
+            clicks = moneyMultiplier;
+            lifeTimeMoney += moneyMultiplier;
+           
+
+              updateThese();
+
+            
+            
+              }
+   
+      
+      
+      function workersMakesMoney(){
+        if(workers >= 1){
+          money = money + (workers * moneyMultiplier);
+          lifeTimeMoney += (workers * moneyMultiplier);
+          
+          updateThese();
+        }
+  }
+      
+      function FactoryMakesMoney(){
+        if (factorys >= 1){
+          money = money + (factorys + 12 * moneyMultiplier);
+          lifeTimeMoney += (factorys + 12 * moneyMultiplier);
+
+          updateThese();
+
+        }
+        
+        
+      }
+      
+      
+
+
+      function buyMultiplier(){
+        if(money >= multiplierCost){
+          moneyMultiplier *= 1.6;
+          money -= multiplierCost;
+          multiplierCost = multiplierCost * 2.6;
+          clicks = moneyMultiplier;
+          
+          updateThese();
+          
+          }
+      }
+      
+      function executeCommand(){
+        var command = document.getElementById("commandInput").value;
+        
+        if (command == "Money500"){
+          money = money + 500;
+          document.getElementById("commandInput").value = " ✅  Recieved $500 ✅ ";
+          updateThese();
+
+        }
+        
+        if (command == "Worker1"){
+          workers = workers + 5;
+          document.getElementById("commandInput").value = " ✅  Recieved 1 worker! ✅ ";
+          updateThese();
+        }
+        
+        if(command == "Factory1"){
+          factorys = factorys + 5;
+          document.getElementById("commandInput").value = " ✅  Recieved 1 factory!  ✅ ";
+          updateThese();
+        }
+        
+        if(command == "Money10k"){
+          money = money + 10000000;
+          document.getElementById("commandInput").value = "✅  Recieved 10k ✅  ";
+          updateThese();
+        
+        } 
+      }
+      
+        function BuildFactory(){
+          if(money >= factoryCost){
+            money -= factoryCost;
+            factoryCosts.push(factoryCost);
+            factoryCost = factoryCost * 1.7;
+            factorys = factorys + 1;
+          
+          updateThese();
+
+        }
+        if(factorys > 0){
+            document.getElementById("demolishFactoryButton").style.display = "block";
+        }
+      
+  }
+  
+            function fireWorker(){
+        if (workers >= 1){
+          workers = workers - 1;
+          money = money + (workerCost / 2);
+          workerCost -= workerCost / 2;
+          
+          updateThese();
+      
+      if (workers == 0){
+        document.getElementById("fireWorkerButton").style.display = "none";
+        
+        }
+        
+      }
+}
+      
+      function demolishFactory(){
+        if (factorys >= 1){
+          factorys = factorys - 1;
+          var lastFactoryCost = factoryCosts.pop();
+          money = money + (lastFactoryCost / 2);
+          factoryCost = lastFactoryCost - 1.1 + 2;
+          
+          updateThese();
+        
+        
+          if (factorys == 0){
+        document.getElementById("demolishFactoryButton").style.display = "none";
+        updateThese();
+
+        }
+        
+      }
+  }
+      function demolishBank(){
+        if(banks >= 1){
+          banks = banks - 1;
+          var lastBankCost = bankCosts.pop();
+          money = money + (lastBankCost / 2);
+          bankCost = lastBankCost - 1.1 + 1;
+
+          updateThese();
+        }
+          if (banks == 0){
+            document.getElementById("demolishBankButton").style.display = "none";
+          
+        }
+      }
+      
+     
+      function bankMakesMoney(){
+        if(banks >= 1){
+          money = money + (banks + 56 * moneyMultiplier);
+          lifeTimeMoney += (banks + 56 * moneyMultiplier);
+          
+          updateThese();
+        }
+      }
+      
+         
+      
+     function formatNumberWithCommas(number) {
+    // Convert number to a string
+    const parts = number.toString().split('.');
+    
+    // Format the integer part with commas
+    parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+
+    // Return the formatted number
+    return parts.join('.');
+      }
+      
+       function hireWorker(){
+        if (money >= workerCost){
+          workers = workers + 1;
+          money = money - workerCost;
+          workerCost = workerCost * 2;
+         
+
+          updateThese();
+          
+            }
+        if(workers > 0){
+            document.getElementById("fireWorkerButton").style.display = "block";
+            updateThese();
+        }
+    }
+          
+      
+      function updateThese(){
+          
+          let moneyDisplay = money;
+          let moneySufix = " ";
+          
+          if (money <= 1000){
+            moneyDisplay = (money).toFixed(0);
+            moneySufix = "";
+            
+          }else if (money < 1000000){
+            moneyDisplay = (money / 1000 ).toFixed(3);
+            moneySufix = "K    🥉";
+           
+          }else if (money < 1000000000){
+            moneyDisplay = (money / 1000 ).toFixed(3);
+            moneySufix = "M    🏅";
+            
+          }else if (money < 1000000000000){
+            moneyDisplay = (money / 1000 ).toFixed(3);
+            moneySufix = "B    🎖";
+            
+          }else if (money < 1000000000000000){
+            moneyDisplay = (money / 1000 ).toFixed(3);
+            moneySufix = "T    🎖🎖";
+
+          }else if (money < 1000000000000000000){
+            moneyDisplay = (money / 1000 ).toFixed(3);
+            moneySufix = "Qd    🎖🎖🎖";
+          
+            
+          }
+          
+          if (workers == 0){
+            document.getElementById("fireWorkerButton").style.display = "none";
+        
+        }
+          
+          if(workers > 0){
+            document.getElementById("fireWorkerButton").style.display = "block";
+        }
+        
+          if (factorys == 0){
+            document.getElementById("demolishFactoryButton").style.display = "none";
+        
+        }
+          
+          if(factorys > 0){
+            document.getElementById("demolishFactoryButton").style.display = "block";
+        }
+        
+        if (banks == 0){
+            document.getElementById("demolishBankButton").style.display = "none";
+        
+        }
+          
+          if(banks > 0){
+            document.getElementById("demolishBankButton").style.display = "block";
+        }
+      
+          document.getElementById("no_of_Multiplier").innerHTML = Math.round(moneyMultiplier * 10) / 10;
+          document.getElementById("multiplierCost").innerHTML = (formatNumberWithCommas(Math.round(multiplierCost)));
+          document.getElementById("no_Clciks").innerHTML = (formatNumberWithCommas(Math.round(clicks * 1)));
+          document.getElementById("workerCost").innerHTML = (formatNumberWithCommas(Math.round(workerCost)));
+          document.getElementById("no_of_money").innerHTML = (formatNumberWithCommas(moneyDisplay + moneySufix));
+          document.getElementById("no_of_workers").innerHTML = (formatNumberWithCommas(workers));
+          document.getElementById("no_of_banks").innerHTML = (formatNumberWithCommas(banks));
+          document.getElementById("factoryCost").innerHTML = (formatNumberWithCommas(Math.round(factoryCost)));
+          document.getElementById("bankCost").innerHTML = (formatNumberWithCommas(Math.round(bankCost)));
+          document.getElementById("no_of_factorys").innerHTML = (formatNumberWithCommas(Math.round(factorys)));
+          document.getElementById("lifeTimeMoney").innerHTML = (formatNumberWithCommas(Math.round(lifeTimeMoney)));
+          document.getElementById("no_of_Seconds").innerHTML = seconds;
+          document.getElementById("no_of_Minutes").innerHTML = minutes;
+          document.getElementById("no_of_Hours").innerHTML = hours;
+          document.getElementById("upgradeCost").innerHTML = (upgradeCost === "MAX") ? "MAX" : formatNumberWithCommas(Math.round(upgradeCost));
+          document.getElementById("finalMathSpeed").innerHTML = finalMathSpeed;
+          /*document.getElementById("finalMathSpeedTwo").innerHTML = finalMathSpeedTwo;
+          document.getElementById("upgradeCostTwo").innerHTML = (upgradeCostTwo === "MAX") ? "MAX" : formatNumberWithCommas(Math.round(upgradeCostTwo));
+          */
+      }
+    
+      function buildBank(){
+        if (money >= bankCost){
+            money -= bankCost;
+            bankCosts.push(bankCost);
+            bankCost = bankCost * 1.9;
+            banks = banks + 1;
+            
+
+            updateThese();
+        }
+            if (banks > 0){
+              document.getElementById("demolishBankButton").style.display = "block";
+            
+        }
+          
+      }
+      /*function buyUpgradeSpeedTwo(){
+         if (money >= upgradeCostTwo && finalMathSpeedTwo > 200){  
+            money -= upgradeCostTwo;            
+            upgradeCostTwo = upgradeCostTwo * 5.8;   
+            speedTwoCount = speedTwoCount - 200;
+            
+            finalMathSpeedTwo = speedTwo + speedTwoCount;
+            
+            clearInterval(factoryInterval);
+            //clearInterval(bankInterval);
+         
+            factoryInterval = setInterval(FactoryMakesMoney, finalMathSpeedTwo);
+            //bankInterval = setInterval(bankMakesMoney, 3600);
+            updateThese();
+         }
+         if(finalMathSpeedTwo == 200){
+           buyUpgradeSpeedTwo = null;
+           upgradeCostTwo = "MAX";
+           updateThese();
+         }
+    
+  }*/
+      function buyUpgradeSpeed(){
+        if (money >= upgradeCost && finalMathSpeed > 200){             
+            money -= upgradeCost;            
+            upgradeCost = upgradeCost * 5.8;        
+            speedOneCount = speedOneCount - 200;
+             SpeedUpgradeInt = SpeedUpgradeInt + 1;
+             
+          finalMathSpeed = speedOne + speedOneCount;
+
+         clearInterval(workerInterval);
+         clearInterval(bankInterval);
+        
+        workerInterval = setInterval(workersMakesMoney, finalMathSpeed);
+          bankInterval = setInterval(bankMakesMoney, 3600);
+         updateThese();
+         
+         
+         if(finalMathSpeed == 200){
+           buyUpgradeSpeed = null;
+           upgradeCost = "MAX";
+         updateThese();
+         }
+         
+  
+        }
+        
+      }
+    
+      function start(){
+        
+        workerInterval = setInterval(workersMakesMoney, finalMathSpeed);
+        factoryInterval = setInterval(FactoryMakesMoney, 1800);
+        bankInterval = setInterval(bankMakesMoney, 3600);
+        
+        setInterval(TimeSeconds, 1000);
+        setInterval(TimeMinutes, 60000);
+        setInterval(TimeHours, 3600000);
+        
+        updateThese();
+      
+      
+
+      
+      }
+      
+      start();
+      //<p> <span id="finalMathSpeedTwo">2500</span> </p>
+      //      <button class="button norm" onclick="buyUpgradeSpeedTwo()">Factory Speed Upgrade: $<span id="upgradeCostTwo">850</span> </button>
+
+
+      
+     
+      
+      </script>
+           
+            
+      </body>
+    
+  </html>
+  
+  
+  
+  
+  
+      
