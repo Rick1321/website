@@ -1,0 +1,4338 @@
+<html>
+   <meta charset="UTF-8">
+        <link href="styles1.css" rel="stylesheet" type="text/css"/>
+          <script src="script1.js"> </script>
+          
+    <head>
+      
+      <style>
+      
+    
+
+.lvlupBox2{
+  font-size: 14px;
+  color: black;
+  line-height: 0px;
+}
+.lvlupBOx{
+  font-size: 17px;
+  color: black;
+}
+.levelBonusBox{
+  background-color: rgba(0, 255, 0, 0.45);
+  width: 150px;
+  height: 85px;
+  position: absolute;
+  right: 180%;
+  top: 290%;
+  z-index: 3;
+  display: none;
+  
+}
+.unitsBox{
+  position: absolute;
+  z-index: 8;
+  right: 285%;
+  top: 100%;
+  width: 60px;
+  font-size: 12px;
+  color: black;
+  background-color: lightgray;
+  border: 1px solid black;
+}
+.endBoss2{
+  position: absolute;
+  color: black;
+  background-color: gray;
+  right: 103%;
+  top: 1590%;
+  z-index: 4;
+  width: 80px;
+  height: 30px;
+  display: none;
+}
+.endBoss1{
+  position: absolute;
+  color: black;
+  background-color: gray;
+  right: 103%;
+  top: 1590%;
+  z-index: 4;
+  width: 80px;
+  height: 30px;
+  display: none;
+}
+.BossMenu{
+  background-color: lightgray;
+  position: absolute;
+  width: 25%;
+  height: 50%;
+  font-size: 9px;
+  right: 55%;
+  top: 99%;
+  z-index: 5;
+}
+.lossBox{
+    position: absolute;
+  color: black;
+  background-color: #F44336;
+  right: 143%;
+  top: 350%;
+  z-index: 4;
+  width: 350px;
+  height: 20px;
+  display: none;
+  border-radius: 5px;
+
+}
+.levelBox{
+  background-color: gray;
+  color: black;
+  position: absolute;
+  right: 188%;
+  top: 103%;
+  width: 60px;
+  font-size: 11px;
+  font-weight: bold;
+  border: 1px solid black;
+}
+.goldBox{
+  background-color: gold;
+  color: black;
+  position: absolute;
+  right: 259%;
+  top: 103%;
+  width: 60px;
+  font-size: 11px;
+  font-weight: bold;
+  border: 1px solid black;
+
+}
+
+.img943Size{
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  right: 116%;
+  top: 137%;
+}
+.victoryBox{
+  position: absolute;
+  color: black;
+  background-color: #FFD700;
+  right: 143%;
+  top: 350%;
+  z-index: 4;
+  width: 350px;
+  height: 20px;
+  display: none;
+  border-radius: 5px;
+
+}
+.boss2{
+  position: absolute;
+  color: black;
+  background-color: gold;
+  right: 180%;
+  top: 790%;
+  z-index: 5;
+  width: 125px;
+  height: 85px;
+  display: none;
+}
+.boss{
+  position: absolute;
+  color: black;
+  background-color: red;
+  right: 180%;
+  top: 790%;
+  z-index: 5;
+  width: 125px;
+  height: 85px;
+  display: none;
+}
+.bossHealthBar3{
+  position: absolute;
+  color: black;
+  background-color: red;
+  right: 143%;
+  top: 350%;
+  z-index: 5;
+  width: 350px;
+  height: 20px;
+  display: none;
+}
+.bossHealthBar4{
+  position: absolute;
+  color: black;
+  background-color: gray;
+  right: 143%;
+  top: 350%;
+  z-index: 4;
+  width: 350px;
+  height: 20px;
+  display: none;
+  
+}
+.bossHealthBar2{
+  position: absolute;
+  color: black;
+  background-color: gray;
+  right: 143%;
+  top: 350%;
+  z-index: 4;
+  width: 350px;
+  height: 20px;
+  display: none;
+}
+.bossHealthBar{
+  position: absolute;
+  color: black;
+  background-color: red;
+  right: 143%;
+  top: 350%;
+  z-index: 5;
+  width: 350px;
+  height: 20px;
+  display: none;
+}
+.BossText{
+    position: absolute;
+  color: black;
+  background-color: transparent;
+  right: 143%;
+  top: 282%;
+  z-index: 5;
+  width: 350px;
+  height: 20px;
+  display: none;
+}
+
+.BossText2{
+    position: absolute;
+  color: gold;
+  background-color: transparent;
+  right: 143%;
+  top: 282%;
+  z-index: 5;
+  width: 350px;
+  height: 20px;
+  display: none;
+}
+.img7899Size{
+  position: absolute;
+  width: 16px;
+  height: 15px;
+  right: 88%;
+  top: 110%;
+}
+.img789Size{
+  position: absolute;
+  width: 16px;
+  height: 15px;
+  right: 93%;
+  top: 110%;
+}
+.img997Size{
+      height: 40px;
+  width: 100px;
+  position: absolute;
+  right: 270%;
+  top: 140%;
+  display: none;
+}
+.img998Size{
+    height: 40px;
+  width: 100px;
+  position: absolute;
+  right: 270%;
+  top: 140%;
+  display: none;
+}
+.img999Size{
+  height: 480px;
+  width: 566px;
+  position: absolute;
+  right: 100%;
+  top: 130%;
+  border-radius: 3px;
+  z-index: 0;
+}
+.giftDisplayMoney{
+  background-color: transparent;
+  color: green;
+  width: 49px;
+  height: 19px;
+  position: absolute;
+  right: 170%;
+  top: 144%;
+  font-size: 12px;
+  line-height: 18px;
+  display: none;
+  font-weight: bold;
+  z-index: 2;
+}
+.BossSummonedBox{
+  background-color: rgba(0,0,0,0.3);
+  position: absolute;
+  right: 120%;
+  top: 150%;
+  z-index: 8;
+  width: 130px;
+  height: 50px;
+  color: black;
+  font-size: 18px;
+  border-radius: 9px;
+  display: none;
+}
+.boss1Location2{
+  position: absolute;
+  right: -4%;
+  top: 58%;
+  z-index: 6;
+  color: #c90000;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: bold;
+  width: 100%;
+  text-align: left;
+}
+.boss1Location{
+  position: absolute;
+  right: -4%;
+  top: 2%;
+  z-index: 6;
+  color: #c90000;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: bold;
+  width: 100%;
+  text-align: left;
+}
+.BossSummonButton2{
+  position: absolute;
+  width: 55px;
+  height: 20px;
+  right: 75%;
+  top: 100.5%;
+  background-color: lightgray;
+  font-size: 10px;
+  transition: all 2.5s ease;
+
+}
+.BossSummonButton2:active{
+  transform: translateY(3px);
+  transition: 100ms;
+  filter: drop-shadow(0px 0px 15px purple);
+
+}
+.BossSummonButton:active{
+  transform: translateY(3px);
+  transition: 100ms;
+  filter: drop-shadow(0px 0px 15px purple);
+
+}
+.BossSummonButton{
+  position: absolute;
+  width: 55px;
+  height: 20px;
+  right: 75%;
+  top: 45.5%;
+  background-color: lightgray;
+  font-size: 10px;
+  transition: all 2.5s ease;
+}
+.SummonBoxPrice2{
+    position: absolute;
+  right: -4%;
+  top: 90%;
+  z-index: 6;
+  text-align: left;
+  color: lightgray;
+  font-size: 11px;
+  line-height: 18px;
+  font-weight: bold;
+  width: 100%;
+}
+.SummonBoxPrice{
+  position: absolute;
+  right: -4%;
+  top: 35%;
+  z-index: 6;
+  text-align: left;
+  color: lightgray;
+  font-size: 11px;
+  line-height: 18px;
+  font-weight: bold;
+  width: 100%;
+}
+.bossKilled2{
+  position: absolute;
+  right: -4%;
+  top: 83%;
+  z-index: 6;
+  font-size: 10px;
+  text-align: left;
+  color: lightgray;
+  font-size: 11px;
+  line-height: 18px;
+  font-weight: bold;
+  width: 100%;
+}
+.bossKilled{
+  position: absolute;
+  right: -4%;
+  top: 27%;
+  z-index: 6;
+  text-align: left;
+  color: lightgray;
+  font-size: 11px;
+  line-height: 18px;
+  font-weight: bold;
+  width: 100%;
+}
+.bossRewardBox2{
+  position: absolute;
+  right: -4%;
+  top: 75%;
+  z-index: 6;
+  text-align: left;
+  color: lightgray;
+  font-size: 11px;
+  line-height: 18px;
+  font-weight: bold;
+  width: 100%;
+}
+.bossRewardBox{
+  position: absolute;
+  right: -4%;
+  top: 18%;
+  z-index: 6;
+  text-align: left;
+  color: lightgray;
+  font-size: 11px;
+  line-height: 18px;
+  font-weight: bold;
+  width: 100%;
+}
+.bossHealthBox2{
+  position: absolute;
+  right: -4%;
+  top: 67%;
+  z-index: 6;
+  color: lightgray;
+  font-size: 11px;
+  line-height: 18px;
+  font-weight: bold;
+  width: 100%;
+  text-align: left;
+}
+.bossHealthBox{
+  position: absolute;
+  right: -4%;
+  top: 10%;
+  z-index: 6;
+  color: lightgray;
+  font-size: 11px;
+  line-height: 18px;
+  font-weight: bold;
+  width: 100%;
+  text-align: left;
+}
+.bossBoxStatDivider0{
+  background-color: gray;
+  width: 267px;
+  height: 8px;
+  right: 8%;
+  top: -465%;
+  border-radius: 2px;
+}
+.bossBoxStatDivider4{
+  background-color: gray;
+  width: 267px;
+  height: 8px;
+  right: 8%;
+  top: -465%;
+  border-radius: 2px;
+}
+.bossBoxStatDivider3{
+  background-color: gray;
+  width: 267px;
+  height: 8px;
+  right: 8%;
+  top: -465%;
+  border-radius: 2px;
+}
+.bossBoxStatDivider2{
+  background-color: gray;
+  width: 267px;
+  height: 8px;
+  right: 8%;
+  top: -465%;
+  border-radius: 2px;
+}
+.bossBoxStatDivider{
+  background-color: gray;
+  width: 267px;
+  height: 8px;
+  right: 8%;
+  top: -465%;
+  border-radius: 2px;
+}
+.bossBoxStat5{
+  background-color: #1e1b1b;
+  width: 267px;
+  height: 145px;
+  right: 8%;
+  top: 0%;
+  border-radius: 2px;
+}
+.bossBoxStat3{
+  background-color: #1e1b1b;
+  width: 267px;
+  height: 145px;
+  right: 8%;
+  top: 0%;
+  border-radius: 2px;
+}
+.bossBoxStat4{
+  background-color: #1e1b1b;
+  width: 267px;
+  height: 145px;
+  right: 8%;
+  top: 0%;
+  border-radius: 2px;
+}
+.bossBoxStat2{
+  background-color: #1e1b1b;
+  width: 267px;
+  height: 145px;
+  right: 8%;
+  top: 0%;
+  border-radius: 2px;
+}
+.bossBoxStat{
+  background-color: #1e1b1b;
+  width: 267px;
+  height: 145px;
+  right: 8%;
+  top: 0%;
+  border-radius: 2px;
+}
+.giftBox2{
+    background-color: red;
+  position: absolute;
+  right: 255%;
+  top: 599%;
+  width: 5px;
+  height: 5px;
+  border: none;
+  display: none;
+  font-size: 9px;
+  text-align: center;
+}
+.giftBox{
+  background-color: transparent;
+  position: absolute;
+  right: 135%;
+  top: 1400%;
+  width: 15px;
+  height: 15px;
+  border: none;
+  display: none;
+  font-size: 9px;
+  text-align: center;
+}
+
+.img432Size{
+height: 35px;
+width: 35px;
+position: absolute;
+right: 379%;
+top: 99%;
+z-index: 2;
+
+}
+.img433Size{
+height: 35px;
+width: 35px;
+position: absolute;
+right: 979%;
+top: 590%;
+z-index: 2;
+
+}
+.button.red{
+        background-color: red;
+        color: white;
+        cursor: pointer;
+        font-size: 12px;
+        position: absolute;
+        right: 169%;
+}
+.buttonRed4{
+        cursor: pointer;
+        font-size: 10px;
+        position: absolute;
+        width: 55px;
+        height: 25px;
+        right: 12%;
+        top: 41%;
+}
+.black2{
+  height: 2000px;
+  width: 2000px;
+  position: absolute;
+  right: 0%;
+  top: 1800%;
+  background-color: black;
+}
+.black{
+  height: 2000px;
+  width: 4000px;
+  position: absolute;
+  right: 314%;
+  top: 0%;
+  background-color: black;
+}
+.buttonRed{
+        cursor: pointer;
+        font-size: 10px;
+        position: absolute;
+        width: 55px;
+        height: 25px;
+        right: 12%;
+        top: 41%;
+}
+
+
+.img74Size{
+  height: 70px;
+  width: 150px;
+  position: absolute;
+  right: 180%;
+  top: 700%;
+  z-index: 1;
+}
+.img82Size{
+  height: 500px;
+  width: 280px;
+  position: absolute;
+  right: -4%;
+  top: 108%; 
+}
+.img76Size{
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  right: 0%;
+  top: 3%;
+}
+#buttonRed4{
+          cursor: pointer;
+        font-size: 10px;
+        position: absolute;
+        background-color: #5fe222;
+        color: black;
+        font-weight: bold;
+        width: 27px;
+        height: 15px;
+        right: 11%;
+        top: 30%;
+        line-height: 10px;
+          z-index: 6;
+
+}
+#buttonRed3{
+        cursor: pointer;
+        font-size: 10px;
+        position: absolute;
+        background-color: #5fe222;
+        color: black;
+        font-weight: bold;
+        width: 29px;
+        height: 15px;
+        right: 74%;
+        top: 30%;
+        line-height: 10px;
+          z-index: 6;
+
+}
+.imgloc1{
+  height: 155%;
+  width: 20%;
+  position: absolute;
+  right: 77%;
+  z-index: 5;
+}
+.imgloc2{
+  height: 155%;
+  width: 20%;
+  position: absolute;
+  right: 0%;
+  z-index: 5;
+}
+
+.timeplayed{
+  position: absolute;
+  right: 188%;
+  top: 1670%;
+  background-color: transparent;
+  width: 140px;
+  height: 10px;
+  color: white;
+  z-index: 2;
+  color: black;
+  
+}
+/*
+.higherBoxStats4{
+  position: absolute;
+  height: 5px;
+  width: 130px;
+  top: 270%;
+  right: 15%;
+  z-index: 2;
+  background-color: white;
+}*/
+.img77Size{
+  height: 44px;
+  width: 286px;
+  position: absolute;
+  right: -7%;
+  top: 132%;
+}
+.img79Size{
+      height: 44px;
+  width: 286px;
+  position: absolute;
+  right: -7%;
+  top: 338%;
+}
+.img812Size{
+  height: 44px;
+  width: 286px;
+  position: absolute;
+  right: -7%;
+  top: 251%;
+  display: none;
+    display: none;
+  z-index: 6;
+
+}
+.img81Size{
+  height: 44px;
+  width: 286px;
+  position: absolute;
+  right: -7%;
+  top: 132%;
+  display: none;
+  z-index: 6;
+}
+.img80Size{
+  height: 44px;
+  width: 286px;
+  position: absolute;
+  right: -7%;
+  top: 450%;
+}
+.img875Size{
+  position: absolute;
+  right: -7%;
+  top: -2%;
+    height: 44px;
+  width: 286px;
+}
+.img87Size{
+    height: 44px;
+  width: 286px;
+  position: absolute;
+  right: -7%;
+  top: 560%;
+  
+}
+
+.img032Size{
+  height: 19px;
+  width: 19px;
+  position: absolute;
+  top: 25%;
+  right: 73%;
+  z-index: 2;
+}
+.img78Size{
+    height: 44px;
+  width: 286px;
+  position: absolute;
+  right: -7%;
+  top: 232%;
+}
+.higherBoxStats4{
+    position: absolute;
+  height: 5px;
+  width: 130px;
+  top: 280%;
+  right: 15%;
+  z-index: 2;
+}
+.higherBoxStats3{
+    position: absolute;
+  height: 5px;
+  width: 130px;
+  top: 220%;
+  right: 15%;
+  z-index: 2;
+}
+.higherBoxStats2{
+  position: absolute;
+  height: 5px;
+  width: 130px;
+  top: 150%;
+  right: 15%;
+  z-index: 2;
+}
+.higherBoxStats{
+  position: absolute;
+  height: 10px;
+  width: 130px;
+  right: 14%;
+  top: 0%;
+  z-index: 2;
+
+}
+.img133Size{
+    height: 190px;
+  width: 168px;
+  position: absolute;
+  right: 2%;
+}
+.img13Size{
+  height: 190px;
+  width: 168px;
+  position: absolute;
+  right: 2%;
+  
+}
+.buttonNorm{
+  background-color: white;
+  position: absolute;
+  top: 100%;
+  right: 160%;
+  width: 50px;
+  height: 50px;
+}
+       .woodTexture{
+        position: absolute;
+        right: 0%;
+        width: 100%;
+        height: 100%;
+        aspect-ratio: auto;
+      }
+        .woodTexture2{
+        position: absolute;
+        right: 5%;
+        width: 100%;
+        height: 100%;
+        transform: rotate(180deg);
+        aspect-ratio: auto;
+      }
+      
+      .img3Size{
+        position: absolute;
+        height: 31px;
+        width: 38px;
+        mix-blend-mode: color-burn;
+        right: 84%;
+        bottom: 3%;
+        
+        
+      }
+      .img199Size{
+        height: 30px;
+        width: 35px;
+        position: absolute;
+        right: 85%;
+        top: 5%;
+        mix-blend-mode: color-burn;
+        z-index: 2;
+      }
+      .img19Size{
+        position: absolute;
+        height: 190px;
+        width: 185px;
+        right: -6%;
+        top: -10%;
+      }
+      
+      .img4Size{
+        position: absolute;
+        height: 30px;
+        width: 35px;
+        mix-blend-mode: color-burn;
+        right: 85%;
+        bottom: 1%;
+        
+        
+      }
+      .VerizionText{
+        
+        position: absolute;
+        color: black;
+        right: 298%;
+        top: 1580%;
+      }
+      .img5Size{
+        position: absolute;
+        height: 21px;
+        width: 26px;
+        mix-blend-mode: color-burn;
+        right: 68%;
+        bottom: 27%;
+      }
+      .img6Size{
+        position: absolute;
+        height: 63px;
+        width: 160px;
+        top: 0%;
+        right: 0%;
+        border-radius: 3px;
+        
+      }
+      .img10Size{
+        position: absolute;
+        height: 30px;
+        width: 45px;
+        right: 82%;
+        bottom: 1%;
+        mix-blend-mode: color-burn;
+      }
+      .img8Size{
+        position: absolute;
+        height: 35px;
+        width: 35px;
+          z-index: 5;
+
+      }
+      .button.norm{
+        cursor: pointer;
+        font-size: 7px;
+        height: 23px;
+      
+      }
+      .button.norm2{
+        cursor: pointer;
+        font-size: 7px;
+        height: 20px;
+        width: 95px;
+        background-color: #cfcfcf;
+        
+      
+      }
+      .button.norm3{
+        cursor: pointer;
+        font-size: 6px;
+        height: 20px;
+        width: 45px;
+        background-color: #cfcfcf;
+      
+      }
+      #fireWorkerButton{
+        display: none;
+        font-size: 8px;
+        position: absolute;
+        right: 1%;
+        top: 61%;
+        width: 55px;
+        height: 25px;
+        background-color: red;
+        font-weight: bold;
+        
+        
+      }
+      #SpeedUpgradeDisplay{
+        display: none;
+      }
+      
+      #demolishFactoryButton{
+        display: none;
+        font-size: 8px;
+        position: absolute;
+        right: 1%;
+        top: 61%;
+        width: 55px;
+        height: 25px;
+        background-color: red;
+        font-weight: bold;
+      }
+      #commandInput{
+        margin-top: 10px;
+      }
+      #sellcasinoButton{
+        display: none;
+        font-size: 8px;
+        position: absolute;
+        right: 1%;
+        top: 61%;
+        width: 55px;
+        height: 25px;
+        background-color: red;
+        font-weight: bold;
+      }
+      #sellBitcoinFarmButton{
+        display: none;
+        font-size: 8px;
+        position: absolute;
+        right: 1%;
+        top: 61%;
+        width: 55px;
+        height: 25px;
+        background-color: red;
+        font-weight: bold;
+      }
+      #demolishBankButton{
+        display: none;
+        font-size: 8px;
+        position: absolute;
+        right: 1%;
+        top: 61%;
+        width: 55px;
+        height: 25px;
+        background-color: red;
+        font-weight: bold;
+      }
+.SaveDataBox{
+  background-color: #9d9d9d;
+  position: absolute;
+  top: 18%;
+  right: 7%;
+  width: 47px;
+  height: 16px;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 9px;
+    z-index: 6;
+
+}
+.ClearDataBox{
+  background-color: #9d9d9d;
+  position: absolute;
+  top: 18%;
+  right: 70%;
+  width: 47px;
+  height: 16px;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 9px;
+    z-index: 6;
+
+
+}
+.CodeTitle{
+  background-color: #9d9d9d;
+  position: absolute;
+  top: 71%;
+  right: 7%;
+  width: 148px;
+  height: 16px;
+  border-radius: 3px;
+  text-align: left;
+  line-height: 15px;
+  font-size: 15px;
+    z-index: 6;
+
+  
+}
+.InnerSettingsBox{
+  background-color: #9d9d9d;
+  position: absolute;
+  top: 4%;
+  right: 7%;
+  width: 148px;
+  height: 16px;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 11px;
+  line-height: 15px;
+  font-size: 15px;
+  z-index: 6;
+}
+.InsideSettingsBox{
+  background-color: transparent;
+  width: 154px;
+  height: 157px;
+  position: absolute;
+  right: 2%;
+  top: 2%;
+  border-radius: 2px;
+  font-size: 1px;
+    z-index: 6;
+
+  
+}
+.UpgradeBodyStat{
+  background-color: transparent;
+  width: 260px;
+  height: 427px;/*BEST 427px*/
+  position: absolute;
+  right: 0%;
+  top: 7%;
+
+}
+.bodyStat{
+  background-color: transparent;
+  width: 260px;
+  height: 427px;/*BEST 427px*/
+  position: absolute;
+  right: 0%;
+  top: 7%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+}
+.UpgradesStat{
+  background-color: transparent;
+  position: absolute;
+  right: 1%;
+  top: 0%;
+  height: 278px;
+  width: 258px;
+  text-align: center;
+  border-radius: 4px;
+  color: black;
+  font-size: 4px;
+  display: none;
+    z-index: 5;
+}
+.bossStat{
+  background-color: lightgray;
+  position: absolute;
+  right: 1%;
+  top: 0%;
+  height: 278px;
+  width: 258px;
+  text-align: center;
+  border-radius: 4px;
+  color: black;
+  font-size: 4px;
+  display: none;
+    z-index: 4;
+}
+.Settings{/*Dark gray background of setting*/
+  background-color: transparent;
+  position: absolute;
+  right: 102%;
+  top: 1148%;
+  height: 165px;
+  width: 160px;
+  text-align: center;
+  border-radius: 4px;
+  color: black;
+  font-size: 4px;
+  display: none;
+    z-index: 6;
+}
+.UpgradesBut{
+  position: absolute;
+  right: 48%;
+  top: 97%;
+  width: 45px;
+  height: 13px;
+  background-color: #3aff00;
+  font-size: 8px;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.BossStatsBut{
+  position: absolute;
+  right: 66%;
+  top: 97%;
+  width: 38px;
+  height: 13px;
+  background-color: red;
+  font-size: 8px;
+  border: none;
+  cursor: pointer;
+    border-radius: 2px;
+
+}
+.SettingsBut{/*Settings button*/
+  position: absolute;
+  right: 8%;
+  top: 1580%;
+  width: 35px;
+  height: 25px;
+  background-color: transparent;
+  font-size: 3px;
+  border: none;
+  z-index: 8;
+  cursor: pointer;
+  
+}
+
+.admin{/*tpye code here box1 */
+  position: absolute;
+  right: 39%;
+  top: 78%;
+  height: 15%; 
+  color: #d9ad27;
+    z-index: 6;
+
+
+  
+}
+
+.admin2{/*execute command  box1 */
+  position: absolute;
+  height: 25px;
+  font-size: 8px;
+  right: 7%;
+  top: 84%;
+  color: #d9ad27;
+  z-index: 6;
+
+  
+}
+.img7Size{
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  right: -165%;
+  top: -390%;
+  
+
+}
+.img10Size{
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  right: 260%;
+  top: -370%;
+  
+}
+.img105Size{
+    height: 15px;
+  width: 15px;
+  position: absolute;
+  right: 230%;
+  top: -330%;
+}
+.img11Size{
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  right: 230%;
+  top: -330%;
+  
+}
+.img9Size{
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  right: 240%;
+  top: -370%;
+  
+}
+.img2Size{/*Upgrade image on speed upgrade*/
+  position: absolute;
+  right: 66%;
+  top: 20%;
+  height: 18px;
+  width: 17px;
+  mix-blend-mode: color-burn;
+  
+  
+  
+  
+}
+
+.CashDisplayBackground{/*Cash light gray background*/
+  position: absolute;
+  top: 135%;
+  right: 160%;
+  width: 255px;
+  height: 19px;
+  background-color: transparent;
+  font-size: 13px;
+  border-radius: 3px;
+
+}
+.CashLocation{/*Cashs location handler and font*/
+  position: absolute;
+  top: -11px;
+  right: -20px;
+  width: 140px;
+  font-size: 11px;
+
+}
+.cashDisplay{ /*Cash Display on middle of screen dark gray*/
+  position: absolute;
+  top: 140%;
+  right: 213%;
+  width: 117px;
+  height: 13px;
+  background-color: #46dd00;
+  color: black;
+  font-weight: normal;
+  color: black;
+    border: 1px solid black;
+
+}
+.Info3Title{/* Printer Info box  info#3*/
+  position: absolute;
+  background-color: #e2b353;/*b7ab67*/
+  color: black;
+  border-radius: 3px;
+  height: 14px;
+  width: 135px;
+  font-size: 13px;
+  top: 13%;
+  right: 12%;
+}
+.Info1Title{/* Printer Info box  info#1*/
+  position: absolute;
+  background-color: #e2b353;/*b7ab67*/
+  color: black;
+  border-radius: 3px;
+  height: 14px;
+  width: 135px;
+  font-size: 13px;
+  top: 13%;
+  right: 12%;
+
+}
+.bankAmountBox{/*Amount of banks #info3 */
+  position: absolute;
+  background-color: #e2b353;/*b7ab67*/
+  color: black;
+  border-radius: 3px;
+  height: 27px;
+  width: 70px;
+  font-size: 8px;
+  top: 89%;
+  right: 51%;
+}
+.casinosAmountBox{/*Amount of cainos  #info5 */
+  position: absolute;
+  background-color: #e2b353;/*b7ab67*/
+  color: black;
+  border-radius: 3px;
+  height: 27px;
+  width: 70px;
+  font-size: 8px;
+  top: 89%;
+  right: 51%;
+}
+.bitCoinFarmsAmountBox{/*Amount of bitCoin Farms #info4 */
+  position: absolute;
+  background-color: #e2b353;/*b7ab67*/
+  color: black;
+  border-radius: 3px;
+  height: 27px;
+  width: 70px;
+  font-size: 8px;
+  top: 89%;
+  right: 51%;
+}
+.FactoryAmountBox{/*Amount of factorys #info2 */
+  position: absolute;
+  background-color: #e2b353;/*b7ab67*/
+  color: black;
+  border-radius: 3px;
+  height: 27px;
+  width: 70px;
+  font-size: 8px;
+  top: 89%;
+  right: 51%;
+}
+
+.PrinterAmountBox{/*Amount of printers #info1 */
+  position: absolute;
+  background-color: #e2b353;/*b7ab67*/
+  color: black;
+  border-radius: 3px;
+  height: 27px;
+  width: 70px;
+  font-size: 8px;
+  top: 89%;
+  right: 51%;
+}
+.MultiplierBox3{
+    position: absolute;
+  background-color: #e2b353;/*b7ab67*/
+  color: black;
+  border-radius: 3px;
+  height: 25px;
+  width: 58px;
+  font-size: 8px;
+  top: 89%;
+  right: 13%;
+}
+.MultiplierBox5{
+      position: absolute;
+  background-color: #e2b353;/*b7ab67*/
+  color: black;
+  border-radius: 3px;
+  height: 25px;
+  width: 58px;
+  font-size: 8px;
+  top: 89%;
+  right: 13%;
+}
+.MultiplierBox4{
+    position: absolute;
+  background-color: #e2b353;/*b7ab67*/
+  color: black;
+  border-radius: 3px;
+  height: 25px;
+  width: 58px;
+  font-size: 8px;
+  top: 89%;
+  right: 13%;
+}
+.MultiplierBox2{
+    position: absolute;
+  background-color: #e2b353;/*b7ab67*/
+  color: black;
+  border-radius: 3px;
+  height: 25px;
+  width: 58px;
+  font-size: 8px;
+  top: 89%;
+  right: 13%;
+}
+.CashPerSecBox{
+      position: absolute;
+  background-color: #e2b353;/*b7ab67*/
+  color: black;
+  border-radius: 3px;
+  height: 25px;
+  width: 58px;
+  font-size: 8px;
+  top: 70%;
+  right: 13%;
+  
+}
+.CashPerSecBox2{
+      position: absolute;
+  background-color: #e2b353;/*b7ab67*/
+  color: black;
+  border-radius: 3px;
+  height: 25px;
+  width: 58px;
+  font-size: 8px;
+  top: 70%;
+  right: 13%;
+  
+}
+.CashPerSecBox4{
+      position: absolute;
+  background-color: #e2b353;/*b7ab67*/
+  color: black;
+  border-radius: 3px;
+  height: 25px;
+  width: 58px;
+  font-size: 8px;
+  top: 70%;
+  right: 13%;
+  
+}
+.CashPerSecBox5{
+      position: absolute;
+  background-color: #e2b353;/*b7ab67*/
+  color: black;
+  border-radius: 3px;
+  height: 25px;
+  width: 58px;
+  font-size: 8px;
+  top: 70%;
+  right: 13%;
+  
+}
+.CashPerSecBox3{
+      position: absolute;
+  background-color: #e2b353;/*b7ab67*/
+  color: black;
+  border-radius: 3px;
+  height: 25px;
+  width: 58px;
+  font-size: 8px;
+  top: 70%;
+  right: 13%;
+  
+}
+.MultiplierBox1{
+    position: absolute;
+  background-color: #e2b353;/*b7ab67*/
+  color: black;
+  border-radius: 3px;
+  height: 25px;
+  width: 58px;
+  font-size: 8px;
+  top: 89%;
+  right: 13%;
+}
+.info3InsideBox4{/* Spped 1800 Text box  info#2*/
+    position: absolute;
+  background-color: #e2b353;/*b7ab67*/
+  color: black;
+  border-radius: 3px;
+  height: 27px;
+  width: 70px;
+  font-size: 8px;
+  top: 49%;
+  right: 51%;
+}
+.info5InsideBox5{/* Spped 3200 Text box  info#5*/
+    position: absolute;
+  background-color: #e2b353;/*b7ab67*/
+  color: black;
+  border-radius: 3px;
+  height: 27px;
+  width: 70px;
+  font-size: 8px;
+  top: 49%;
+  right: 51%;
+}
+.info4InsideBox4{/* Spped 2800 Text box  info#4*/
+    position: absolute;
+  background-color: #e2b353;/*b7ab67*/
+  color: black;
+  border-radius: 3px;
+  height: 27px;
+  width: 70px;
+  font-size: 8px;
+  top: 49%;
+  right: 51%;
+  
+}
+.infoInsideBox33{
+    position: absolute;
+  background-color: #e2b353;/*b7ab67*/
+  color: black;
+  border-radius: 3px;
+  height: 27px;
+  width: 70px;
+  font-size: 8px;
+  top: 29%;
+  right: 51%;
+}
+.info2InsideBox3{/* Spped 1800 Text box  info#2*/
+    position: absolute;
+  background-color: #e2b353;/*b7ab67*/
+  color: black;
+  border-radius: 3px;
+  height: 27px;
+  width: 70px;
+  font-size: 8px;
+  top: 49%;
+  right: 51%;
+}
+.InsideBox3{/* Spped 1800 Text box  info#1*/
+    position: absolute;
+  background-color: #e2b353;/*b7ab67*/
+  color: black;
+  border-radius: 3px;
+  height: 27px;
+  width: 70px;
+  font-size: 8px;
+  top: 49%;
+  right: 51%;
+}
+.infoInsideBox5{/* cash made: Box info#5  */
+    position: absolute;
+  background-color: #e2b353;/*b7ab67*/
+  color: black;
+  border-radius: 3px;
+  height: 27px;
+  width: 70px;
+  font-size: 8px;
+  top: 29%;
+  right: 51%;
+}
+.infoInsideBox58{/* Lvl: Box info#5 */
+    position: absolute;
+  background-color: #e2b353;/*b7ab67*/
+  color: black;
+  border-radius: 3px;
+  height: 27px;
+  width: 70px;
+  font-size: 8px;
+  top: 69%;
+  right: 51%;
+}
+.infoInsideBox44{/* Lvl: Box info#4 */
+    position: absolute;
+  background-color: #e2b353;/*b7ab67*/
+  color: black;
+  border-radius: 3px;
+  height: 27px;
+  width: 70px;
+  font-size: 8px;
+  top: 69%;
+  right: 51%;
+}
+.infoInsideBox2{/* Lvl: Box info#2  */
+    position: absolute;
+  background-color: #e2b353;/*b7ab67*/
+  color: black;
+  border-radius: 3px;
+  height: 27px;
+  width: 70px;
+  font-size: 8px;
+  top: 69%;
+  right: 51%;
+}
+.InsideBox2{/* Lvl: Box info#1  */
+    position: absolute;
+  background-color: #e2b353;/*b7ab67*/
+  color: black;
+  border-radius: 3px;
+  height: 27px;
+  width: 70px;
+  font-size: 8px;
+  top: 69%;
+  right: 51%;
+}
+.infoInsideBox55{/*lvl made info 3*/
+    position: absolute;
+  background-color: #e2b353;/*b7ab67*/
+  color: black;
+  border-radius: 3px;
+  height: 27px;
+  width: 70px;
+  font-size: 8px;
+  top: 69%;
+  right: 51%;
+  
+}
+.InsideBox1{/*Dark Baige box displays cash made  info#1*/
+    position: absolute;
+  background-color: #e2b353;/*b7ab67*/
+  color: black;
+  border-radius: 3px;
+  height: 27px;
+  width: 70px;
+  font-size: 8px;
+  top: 29%;
+  right: 51%;
+  
+}
+.innerBox{/*Baige box inside info#1 */
+  background-color: transparent;/*e3d4a0 */
+  width: 154px;
+  height: 157px;
+  position: absolute;
+  right: 2%;
+  top: 2%;
+  /*border-radius: 2px;*/
+  font-size: 1px;
+}
+.infoInsideBox3{/*Cash Made box info3*/
+    position: absolute;
+  background-color: #e2b353;/*b7ab67*/
+  color: black;
+  border-radius: 3px;
+  height: 27px;
+  width: 70px;
+  font-size: 8px;
+  top: 29%;
+  right: 51%;
+}
+.infoInsideBox4{/*Cash Made box info4*/
+    position: absolute;
+  background-color: #e2b353;/*b7ab67*/
+  color: black;
+  border-radius: 3px;
+  height: 27px;
+  width: 70px;
+  font-size: 8px;
+  top: 29%;
+  right: 51%;
+}
+.infoInsideBox1{/*Cash Made box info1*/
+    position: absolute;
+  background-color: #e2b353;/*b7ab67*/
+  color: black;
+  border-radius: 3px;
+  height: 27px;
+  width: 70px;
+  font-size: 8px;
+  top: 29%;
+  right: 51%;
+}
+.Info5Title{/*#info 5s Title box*/
+  position: absolute;
+  background-color: #e2b353;/*b7ab67*/
+  color: black;
+  border-radius: 3px;
+  height: 14px;
+  width: 135px;
+  font-size: 13px;
+  top: 13%;
+  right: 12%;
+}
+.Info4Title{/*#info 4s Title box*/
+  position: absolute;
+  background-color: #e2b353;/*b7ab67*/
+  color: black;
+  border-radius: 3px;
+  height: 14px;
+  width: 135px;
+  font-size: 13px;
+  top: 13%;
+  right: 12%;
+}
+.Info2Title{/*#info 2s Title box*/
+  position: absolute;
+  background-color: #e2b353;/*b7ab67*/
+  color: black;
+  border-radius: 3px;
+  height: 14px;
+  width: 135px;
+  font-size: 13px;
+  top: 13%;
+  right: 12%;
+}
+.info5{/*#info 5s Handler  dark gray box  */
+  background-color: transparent;
+  position: absolute;
+  right: 102%;
+  top: 218%;
+  height: 165px;
+  width: 160px;
+  text-align: center;
+  border-radius: 4px;
+  color: black;
+  font-size: 4px;
+  display: none;
+}
+.info4{/*#info 4s Handler  dark gray box  */
+  background-color: transparent;
+  position: absolute;
+  right: 102%;
+  top: 218%;
+  height: 165px;
+  width: 160px;
+  text-align: center;
+  border-radius: 4px;
+  color: black;
+  font-size: 4px;
+  display: none;
+}
+.info2{/*#info 2s Handler  dark gray box  */
+  background-color: transparent;
+  position: absolute;
+  right: 102%;
+  top: 218%;
+  height: 165px;
+  width: 160px;
+  text-align: center;
+  border-radius: 4px;
+  color: black;
+  font-size: 4px;
+  display: none;
+}
+.innerBoxInfo3{/*Baige box inside dark gray box info#3*/
+  background-color: transparent;
+  width: 154px;
+  height: 157px;
+  position: absolute;
+  right: 2%;
+  top: 2%;
+  border-radius: 2px;
+  font-size: 1px;
+}
+.innerBoxInfo4{/*Baige box inside dark gray box info#4*/
+  background-color: transparent;
+  width: 154px;
+  height: 157px;
+  position: absolute;
+  right: 2%;
+  top: 2%;
+  border-radius: 2px;
+  font-size: 1px;
+}
+.innerBoxInfo2{ /*Baige box inside dark gray box*/
+  background-color: transparent;
+  width: 154px;
+  height: 157px;
+  position: absolute;
+  right: 2%;
+  top: 2%;
+  border-radius: 2px;
+  font-size: 1px;
+}
+.info2but{/* #info 2s Button*/
+  background-color: transparent;
+  position: absolute;
+  right: 8%;
+  top: 317%;
+  height: 5px;
+  width: 10px;
+  font-size: 4px;
+  border: none;
+  outline: none;
+  z-index: 3;
+  
+}
+.info5but{/*#info 5s button*/
+  background-color: transparent;
+  position: absolute;
+  right: 8%;
+  top: 658%;
+  height: 5px;
+  width: 10px;
+  font-size: 4px;
+  border: none;
+  outline: none;
+  z-index: 3;
+}
+.info4but{/*#info 4s button*/
+  background-color: transparent;
+  position: absolute;
+  right: 8%;
+  top: 532%;
+  height: 5px;
+  width: 10px;
+  font-size: 4px;
+  border: none;
+  outline: none;
+  z-index: 3;
+}
+.info3but{/* #info 3s Button*/
+  background-color: transparent;
+  position: absolute;
+  right: 8%;
+  top: 430%;
+  height: 5px;
+  width: 10px;
+  font-size: 4px;
+  border: none;
+  outline: none;
+  z-index: 3;
+  
+}
+.info1but{/*info#1 button for money Printer */
+  background-color: transparent;
+  position: absolute;
+  right: 28%;
+  top: 174%;
+  height: 1px;
+  width: 1px;
+  font-size: 1px;
+  border: none;
+  outline: none;
+  z-index: 3;
+
+  
+
+}
+.info1{/*Info#1 Display background stuff */
+  background-color: transparent;
+  position: absolute;
+  right: 102%;
+  top: 218%;
+  height: 165px;
+  width: 160px;
+  text-align: center;
+  border-radius: 4px;
+  color: black;
+  display: none;
+  font-size: 4px;
+  
+}
+.info3{/*Info#3 Display background stuff */
+  background-color: transparent;
+  position: absolute;
+  right: 102%;
+  top: 218%;
+  height: 165px;
+  width: 160px;
+  text-align: center;
+  border-radius: 4px;
+  color: black;
+  display: none;
+  font-size: 4px;
+}
+.statbut{ /*Stats button position */
+  position: absolute;
+  right: 102%;
+  top: 139%;
+  border: none;
+  background-color: transparent;
+  
+  
+}
+.stats{/*Stats box handler position*/
+  background-color: transparent;
+  position: absolute;
+  right: 102%;
+  top: 218%;
+  width: 160px;
+  text-align: center;
+  border-radius: 4px;
+  display: none;
+  color: black;
+  
+  
+}
+.backgroundBoxTitle{/* the yellow box behind title */
+  background-color: #d9ad27;
+  position: absolute;
+  width: 566px;
+  height: 29px;
+  top: 0%;
+  right: 100%;
+  
+}
+.codeBox{/* gray box that holds enter cmd  */
+  background-color: #257881;
+  position: absolute;
+  top: 1600%;
+  width: 259px;
+  height: 40px;
+  right: 0%;
+  color: #989794;
+  z-index: 6;
+}
+.box{/* store blue box */
+  background-color: #257881;
+  width: 270px;
+  margin: 2px;
+  height: 30px;
+  position: absolute;
+  right: 0%;
+  top: 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: #257881;
+}
+.sep{/* roof peiece under store title*/
+  position: absolute;
+  top: 29px;
+  height: 15px;
+  width: 270px;
+  color: #986a14;
+  
+}
+.separator2{
+  background-color: black;
+  position: absolute;
+  width: 259px;
+  height: 11px;
+  right: 0%;
+  top: 1567%;
+  font-size: 3px;
+  z-index: 6;
+}
+.floor3{/* Floor piece under print money*/
+  position: absolute;
+  top: 1726%;
+  right: 265px;
+  width: 570px;
+  
+  
+}
+
+.floor{/* roof piece under title*/
+  position: absolute;
+  top: 97%;
+  right: 272px;
+  width: 570px;
+  height: 10px;
+  color: #706d6d;
+}
+
+.floor2{/* floor piece under gray cmd box*/
+  position: absolute;
+  top: 1726%;
+  right: 0%;
+  width: 259px;
+  z-index: 6;
+  
+}
+.wall2{
+  position: absolute;
+  right: 309%;
+  top: 1%;
+  width: 15px;
+  height: 540px;
+  
+  
+}
+.wall{
+  position: absolute;
+  right: 95%;
+  top: 1%;
+  height: 541px;
+  width: 15px;
+  
+  
+}
+
+.container111{
+    position: absolute; 
+  height: 35px; 
+  width: 260px;
+  align-items: center; 
+  right: 0%;
+  top: 560%;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 9px;
+  cursor: pointer;
+  z-index: 2;
+  line-height: 35px;
+}
+.container1{/* Money Printer $10*/
+  position: absolute; 
+  height: 35px; 
+  width: 260px;
+  align-items: center; 
+  right: 0%;
+  top: 120%;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 9px;
+  cursor: pointer;
+  z-index: 2;
+  line-height: 35px;
+}
+
+.container22{/* Build factory $1000*/
+  position: absolute; 
+  height: 35px; 
+  width: 260px;
+  align-items: center; 
+  right: 0%;
+  top: 231%;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 9px;
+  cursor: pointer;
+  z-index: 2;
+
+}
+.container77{/*Build BitCoinFarm */
+  position: absolute; 
+  height: 35; 
+  width: 260px;
+  align-items: center; 
+  right: 0%;
+  top: 455%;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 9px;
+  cursor: pointer;
+z-index: 2;
+}
+.container3{/* Build Bank $10,000*/
+  position: absolute; 
+  height: 35; 
+  width: 260px;
+  align-items: center; 
+  right: 0%;
+  top: 344%;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 9px;
+  cursor: pointer;
+  z-index: 2;
+
+} 
+.container465{
+  position: absolute; 
+  height: 35px; 
+  width: 260px;
+  align-items: center; 
+  right: 0%;
+  top: 260%;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 9px;
+  cursor: pointer;
+  z-index: 8;
+    display: none;
+
+
+}
+.container4{/* Mutiplier x1.5 $250*/
+  position: absolute; 
+  height: 35px; 
+  width: 260px;
+  align-items: center; 
+  right: 0%;
+  top: 135%;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 9px;
+  cursor: pointer;
+  z-index: 9;
+    display: none;
+
+
+}
+.container7{/* buy speed upgrade #5 */
+  position: absolute; 
+  height: 25px; 
+  width: 55px;
+  align-items: center; 
+  right: 12%;
+  top: 30%;
+  background-color: #4ac739;
+  color: black;
+  font-weight: bold;
+  font-size: 6px;
+  cursor: pointer;
+  padding-left: 16px;
+  z-index: 1;
+}
+.container6{/* buy speed upgrade #4 */
+  position: absolute; 
+  height: 25px; 
+  width: 55px;
+  align-items: center; 
+  right: 12%;
+  top: 30%;
+  background-color: #4ac739;
+  color: black;
+  font-weight: bold;
+  font-size: 6px;
+  cursor: pointer;
+  padding-left: 16px;
+  z-index: 1;
+  
+}
+.container5{/* buy speed upgrade #1 */
+  position: absolute; 
+  height: 25px; 
+  width: 55px;
+  align-items: center; 
+  right: 12%;
+  top: 30%;
+  background-color: #4ac739;
+  color: black;
+  font-weight: bold;
+  font-size: 6px;
+  cursor: pointer;
+  padding-left: 16px;
+  z-index: 1;
+  
+}
+
+
+.title{/* Money Prining Co. Title*/
+  position: absolute;
+  text-align: right;
+  top: 0%;
+  right: 175%;
+  width: 1200px;
+  height: 20px;
+  line-height: 28px;
+  padding-left: 400px;
+  color: black;
+  
+}
+.buttonN {
+  background-color: #5e5b5b;
+  height: 20px;
+  width: 125px;
+  border: 2px white solid;
+  border-radius: 4px;
+  color: #ebe5e5;
+  font-weight: bold;
+  font-size: 9px;
+  cursor: pointer;
+}
+
+.but{/* Print Cash Button*/
+   
+   position: absolute;
+   right: 180%;
+   top: 748%;
+   text-align: center;
+   background-color: transparent;
+   font-size: 12px;
+   font-weight: bold;
+   color: black;
+   height: 50px;
+   width: 150px;
+   cursor: pointer;
+   border: none;
+   border-radius: 4px;
+   line-height: 35px;
+   z-index: 3;
+   display: block;
+   
+}
+
+
+.container2 {
+  position: relative; /* Establishes a positioning context for absolute children */
+  height: 0vh; /* Full viewport height */
+  width: 24%; /* Full width of its parent container */
+  display: flex;
+  align-items: center; /* Vertically center the items */
+  justify-content: flex-end; /* Align items to the right */
+  padding: 0 10px; /* Optional: add some padding on the right */
+  color: #ebe5e5;
+  font-weight: bold;
+  background-color: #5e5b5b;
+  height: 20px;
+  width: 80px;
+  border: 2px white solid;
+  border-radius: 4px;
+  display: flex;
+  align-items: center; /* Center text vertically inside the button */
+  justify-content: center; /* Center text horizontally inside the button */
+  font-size: 8px;
+  margin: 0px; /* Optional: space between buttons */
+}
+body, html{/* gray background of game*/
+  background-color: #8e8e8e;
+  padding: 0;
+  overflow: hidden;
+  margin: 0;
+  border: 2px solid black;
+}
+
+.buttonNN {
+  background-color: #5e5b5b;
+  height: 20px;
+  width: 140;
+  border: 2px white solid;
+  border-radius: 4px;
+  display: flex;
+  color: #ebe5e5;
+  font-weight: bold;
+  
+  justify-content: flex-end; /* Center text horizontally inside the button */
+  font-size: 9px;
+  cursor: pointer;
+  margin: 1px; /* Optional: space between buttons */
+}
+
+
+
+      </style>
+      
+      </head>
+    
+    
+    
+    
+	      <body>
+
+      <div class="box" style="color: white;">Store
+            <div class="floor3"><img src="https://assets.onecompiler.app/42qfkqgru/42qfktqbz/Screenshot%202024-09-01%207.41.32%20PM.png" class="woodTexture"> | </div>
+                  <div class="sep"> <img src="https://assets.onecompiler.app/42qfkqgru/42qfktqbz/Screenshot%202024-09-01%207.41.32%20PM.png" class="woodTexture" style="font-size: 5px"> </div>
+                        <div class="wall"> <img src="https://assets.onecompiler.app/42qfkqgru/42qfktqbz/Screenshot%202024-09-01%207.44.52%20PM.png" class="woodTexture"> </div>
+                              <div class="floor"><img src="https://assets.onecompiler.app/42qfkqgru/42qfktqbz/Screenshot%202024-09-01%207.41.32%20PM.png" class="woodTexture">  </div>
+                                     <div class="wall2"> <img src="https://assets.onecompiler.app/42qfkqgru/42qfktqbz/Screenshot%202024-09-01%207.44.52%20PM.png" class="woodTexture">  </div>
+                                           <div class="floor2"> <img src="https://assets.onecompiler.app/42qfkqgru/42qfktqbz/Screenshot%202024-09-01%207.41.32%20PM.png" class="woodTexture"> | </div>
+                                                <div class="timeplayed"> <p style="font-size: 8px;">⏰Time Played Sec: <span id="no_of_Seconds">0</span> Min: <span id="no_of_Minutes">0</span> Hrs: <span id="no_of_Hours">0</span> </p> </div>
+                                                        <div> <img src="https://assets.onecompiler.app/42qfkqgru/42qfktqbz/Screenshot_2024-09-07_8.52.58_PM-removebg-preview.png" class="imgloc1"></div>
+                                                      <div> <img src="https://assets.onecompiler.app/42qfkqgru/42qfktqbz/Screenshot_2024-09-07_8.52.58_PM-removebg-preview.png" class="imgloc2"></div>
+                                                  <div> <img src='https://assets.onecompiler.app/42qfkqgru/42qfktqbz/Screenshot_2024-09-07_6.52.51_PM-removebg-preview.png' class="img82Size"> </div>
+                                            <button class="giftBox" onclick='claimGift()' id='giftBox'><img src='https://assets.onecompiler.app/42qfkqgru/42qfktqbz/Screenshot_2024-09-10_2.56.46_PM-removebg-preview.png' class='img432Size'> </button> 
+                                        <button class="giftBox2" onclick='claimGift2()' id='giftBox2'><img src='https://assets.onecompiler.app/42qfkqgru/42qfktqbz/Screenshot_2024-09-10_2.56.46_PM-removebg-preview.png' class='img432Size'> </button> 
+                                    <div class='giftDisplayMoney' id='giftDisplayMoney'> +<span id='GiftMoney'></div>
+                                   <img src='https://assets.onecompiler.app/42qfkqgru/42qfktqbz/Screenshot%202024-09-10%204.40.56%20PM.png' class='img999Size'>
+                         <img src='https://assets.onecompiler.app/42qfkqgru/42qfktqbz/Screenshot_2024-09-10_5.35.54_PM-removebg-preview.png' class='img998Size' id='lvlbox'>
+                    <p class="unitsBox" id="unitsBox"> <span id="no_of_units">0</span>/<span id="MAX_NUM_UNITS">85</span> units</p>
+                  <p class="goldBox"> Gold: <span id="gold">0</span></p>
+            <p class="levelBox">Level: <span id="playerLvl">0</span></p>
+    <!--BOSS 2 -->  
+      <div id="bossHealthBar"class="bossHealthBar">  </div>
+           <div id="bossHealthBar2" class="bossHealthBar2" ><img src="https://assets.onecompiler.app/42qfkqgru/42qfktqbz/skull-icon-png-1.jpg" class="img789Size"> </div>
+                <p id="BossText" class="BossText" > BOSS   </p>
+                     <button class="boss" id="boss" onclick="bossLoseHealth()">Health: <span id="bossHealth">1000</span></button>
+                           <div class='victoryBox' id="victoryBox"> VICTORY!</div>
+                                  <button class="endBoss1" id="endBoss1" onclick='endBoss()'>Surrender</button>
+                                      <div class='lossBox' id="lossBox"> Defeat!</div>
+                                            <!--BOSS 1 -->  
+                                               <div id="bossHealthBar3" class="bossHealthBar3"></div>
+                                                   <div id="bossHealthBar4" class="bossHealthBar4" ><img src="https://assets.onecompiler.app/42qfkqgru/42qfktqbz/skull-icon-png-1.jpg" class="img789Size"><img src="https://assets.onecompiler.app/42qfkqgru/42qfktqbz/skull-icon-png-1.jpg" class="img7899Size"></div>
+                                                   <img src="https://assets.onecompiler.app/42qfkqgru/42qfktqbz/skull-icon-png-1.jpg" class="img7899Size">
+                                                          <p id="BossText2" class="BossText2" > GOLDEN BOSS   </p>
+                                                                 <button class="boss2" id="boss2" onclick="bossLoseHealth2()">Health: <span id="bossHealth2">2500</span></button>
+                                                                      <button class="endBoss2" id="endBoss2" onclick='endBoss2()'>Surrender</button>
+                                                                             <div class='victoryBox' id="victoryBox"> VICTORY!</div>
+
+                                              <div class="black"> </div>
+                                                         <div class="black2"> </div>
+                                                                <div class="levelBonusBox" id="levelBonusBox">
+                                                                  <p class="lvlupBOx">LEVEL UP!</p>
+                                                                      <p class="lvlupBox2">+<span id="levelUpBonus">0</span></p>
+                                                                      <p class="lvlupBox2">+<span id="levelUpBonusGold">0</span>g</p>
+                                                                   </div>
+                                                          <div class='BossSummonedBox' id='BossSummonedBox'>Boss has been Summoned!</div>
+                                                         
+                                                         
+                                                         
+                                                         
+                                                         
+      <div> <button  class="but" onclick="makeMoney()"><br>click </button> </div>
+      
+      
+
+      <div> <button class="statbut" onclick="showStatsorHide()"> <img src='https://assets.onecompiler.app/42qfkqgru/42qfktqbz/Screenshot_2024-09-08_9.48.23_AM-removebg-preview.png' class="img76Size"> </button> </div>
+             
+             <div class="CashDisplayBackground"> </div>
+             
+                           <div class="cashDisplay"><p class="CashLocation">Cash: $<span id="no_of_money">0</span> </p> </div>
+                      <img id='but' src="https://assets.onecompiler.app/42qfkqgru/42qfktqbz/Screenshot_2024-09-08_10.57.17_AM-removebg-preview.png" class='img74Size'>
+
+
+              
+      <div class="codeBox"> </div>
+    <p class="VerizionText"> v.1 </p>
+
+ <div> <button class='SettingsBut' onclick="showSettingsorHide()"> <img src='https://assets.onecompiler.app/42qfkqgru/42qfktqbz/Screenshot_2024-09-07_8.47.29_PM-removebg-preview.png' class='img8Size'> | </button> </div>
+                                               
+                    <div class="Settings" id="Settings"> 
+                             <div class="InsideSettingsBox"><><img src="https://assets.onecompiler.app/42qfkqgru/42qfktqbz/Screenshot_2024-09-07_6.52.51_PM-removebg-preview.png" class="img19Size"></div>
+                                    <div class="InnerSettingsBox"> --Settings-- </div>
+                                         <div class="admin"> <input class="button norm2" type="text" id="commandInput" placeholder="type code here."> </div>
+                                              <div class=" admin2"><button class="button norm3" onclick="executeCommand()" >Execute Command </button> </div>
+                                                    <div class=CodeTitle> Codes: </div>
+                                                           <div class="ClearDataBox"> Clear Data </div>
+                                                                  <button id="buttonRed3" onclick="ClearData()"> Yes </button> 
+                                                                           <div class="SaveDataBox"> Save Data </div>
+                                                                                <button onclick="saveData()" id="buttonRed4"> Yes </button> 
+
+                                                         
+          </div>
+
+    <div class= separator2> <img src="https://assets.onecompiler.app/42qfkqgru/42qfktqbz/Screenshot%202024-09-01%207.41.32%20PM.png" class="woodTexture">  </div>
+    <div class="backgroundBoxTitle">  </div>
+    <div h1 class="title" style="font-size:18px;" > 𝙈𝙤𝙣𝙚𝙮 𝙋𝙧𝙞𝙣𝙩𝙞𝙣𝙜 𝘾𝙤. </h1> </div>
+    
+
+           <div> <button class='BossStatsBut' onclick="showBossStatorHide()"> Bosses </button> </div>
+                 <div> <button class='UpgradesBut' onclick="showUpgradesorHide()"> Upgrades </button> </div>
+
+
+
+      <div class="stats" id="stats">
+                <div><img src="https://assets.onecompiler.app/42qfkqgru/42qfktqbz/Screenshot_2024-09-07_6.52.51_PM-removebg-preview.png" class="img13Size"></div>
+                     <div class="higherBoxStats"> <p style="color: black";"font-size: 14px; ">++ 🏆Stats: ++</p> </div>
+                          <div class="higherBoxStats2"> <p style="font-size: 8px; ">💰Cash Earned: $ <span id="lifeTimeMoney">0</span>  </p> </div>
+                                   <div class="higherBoxStats3"> <p style="font-size: 7px; ">🖱️Money Per Click: x<span id="no_Clciks">1</span> </p ></div>
+                                         <div class="higherBoxStats4"> <p style="font-size: 7px; ">Clicks: <span id="no_Of_clicks">0</span> </p ></div>
+
+                                           <div class="higherBoxStats5"> <p style="font-size: 8px; ">🔥Multiplier: x<span id="no_of_Multiplier">1</span> </p> </div>
+                      
+            
+      </div>
+      
+      
+      
+      
+      
+  <div id='upgadeCollective'>
+                 <div> <img src='https://assets.onecompiler.app/42qfkqgru/42qfktqbz/Screenshot_2024-09-08_9.59.51_AM-removebg-preview.png' class='img81Size' id='img81Size'></div>
+                     <div>  <img src='https://assets.onecompiler.app/42qfkqgru/42qfktqbz/Screenshot_2024-09-08_9.59.51_AM-removebg-preview.png' class='img812Size' id='img812Size'></div>
+                          <div> <button id="container4" class="container4" onclick="buyMultiplier()"> Multiplier x1.5 $<span id="multiplierCost">250</span> <img src='https://assets.onecompiler.app/42qfkqgru/42qfktqbz/Screenshot_2024-09-10_2.47.34_PM-removebg-preview.png' class="img032Size"></button> </div>
+                          <div> <button id="container465" class="container465" onclick="buyUnitUpgrade()">+15 units <span id="UnitUpgradeCost">450</span>g </button></div>
+    
+    </div>
+      
+      
+      <div id="collective">
+               <div><img src='https://assets.onecompiler.app/42qfkqgru/42qfktqbz/Screenshot_2024-09-08_9.59.51_AM-removebg-preview.png' class='img87Size'></div>
+                    <div> <button class="container111" onclick="buildCasino()"> Casino $<span id="casinoCost">125,000</span> </button>  </div>
+       
+                <div><img src='https://assets.onecompiler.app/42qfkqgru/42qfktqbz/Screenshot_2024-09-08_9.59.51_AM-removebg-preview.png' class='img78Size'></div>
+                      <div> <button class="container22" onclick="BuildFactory()"> Build Factory $<span id="factoryCost">1,000</span> </button> </div>
+       
+               <div><img src='https://assets.onecompiler.app/42qfkqgru/42qfktqbz/Screenshot_2024-09-08_9.59.51_AM-removebg-preview.png' class='img79Size'></div>
+                    <div> <button class="container3" onclick="buildBank()"> Build Bank $<span id="bankCost">10,000</span> </button> </div>
+      
+              <div><img src='https://assets.onecompiler.app/42qfkqgru/42qfktqbz/Screenshot_2024-09-08_9.59.51_AM-removebg-preview.png' class='img80Size'> </div>
+                  <div> <button class="container77" onclick="buildBitCoinFarm()"> Build BitCoin Farm $<span id="BitCoinFarmCost">35,000</span> </button> </div> 
+                  
+                  <div><img src='https://assets.onecompiler.app/42qfkqgru/42qfktqbz/Screenshot_2024-09-08_9.59.51_AM-removebg-preview.png' class='img77Size' id="img77Size"></div>
+                      <div> <button id="container1" class="container1" onclick="hireWorker()"> Money Printer $<span id="workerCost">10</span> </button>  </div>
+                  
+
+
+      </div>
+       
+       
+       
+       
+        <div> 
+            <button id="info1but"class="info1but" onclick="showInfo1orHide()" style="font-weight: bold;">  
+                <img src='https://assets.onecompiler.app/42qfkqgru/42qfktqbz/images-removebg-preview%20(1).png' class='img7Size'>
+           </button> 
+        </div>
+
+
+
+            <div><button class="info3but" onclick="showInfo3orHide()"><img src='https://assets.onecompiler.app/42qfkqgru/42qfktqbz/images-removebg-preview%20(1).png' class='img9Size' id='img9Size'></button></div>
+            <div><button class="info2but" onclick="showInfo2orHide()"><img src='https://assets.onecompiler.app/42qfkqgru/42qfktqbz/images-removebg-preview%20(1).png' class='img10Size'></button></div>
+            <div><button class="info5but" onclick="showInfo5orHide()"><img src='https://assets.onecompiler.app/42qfkqgru/42qfktqbz/images-removebg-preview%20(1).png' class='img105Size'id='img105Size'></button></div>
+            <div><button class="info4but" onclick="showInfo4orHide()"><img src='https://assets.onecompiler.app/42qfkqgru/42qfktqbz/images-removebg-preview%20(1).png' class='img11Size'id='img11Size'></button></div>
+
+
+                       <div class='info5' id='info5'>
+                            <img src="https://assets.onecompiler.app/42qfkqgru/42qfktqbz/Screenshot_2024-09-07_4.06.49_PM-removebg-preview.png" class="img133Size">
+                                <div class='Info5Title'>--Casino Info-- </div>
+                                    <div class="infoInsideBox5"> <p>Cash Made:  <span id="casinosLifeTimeMoneyMade">0</span> </p> </div>
+                                      <div class="MultiplierBox5"> <p>🔥Multiplier: x<span id="no_of_Multiplier6ButSame">1</span> </p> </div>
+                                            <div> <button class="container7" onclick="buyUpgradeSpeed5()">upgrade <br>$<img src="https://assets.onecompiler.app/42qfkqgru/42qfktqbz/Screenshot%202024-09-01%205.25.40%20PM.png" class ="img2Size"><span id="upgradeCost5">3250</span></button> </div> 
+                                                <div class="infoInsideBox58"> <p>Lvl:  <span id="No_Of_Lvl_casino">0</span> </p> </div>
+                                                      <div class="info5InsideBox5"> <p>Speed:  <span id="finalMathSpeed5">3200</span> </p> </div>
+                                                               <div class="buttonRed4"><button onclick="sellCasino()" id="sellcasinoButton"> Sell x1 </button>  </div>
+                                                                    <div class="casinosAmountBox"> <p style="font-size: 8px; ">Casinos:  <span id="no_of_casinos">0</span> </p></div>
+                                                                       <div class="CashPerSecBox5"> <p>Cash per sec: <br>x<span id="casinosCashPerSec">0</span> </p> </div>
+
+                         
+                       </div>
+
+
+                      <div class='info4' id='info4'>
+                                <img src="https://assets.onecompiler.app/42qfkqgru/42qfktqbz/Screenshot_2024-09-07_4.06.49_PM-removebg-preview.png" class="img13Size">
+                            <div class='innerBoxInfo4'> </div>
+                                <div class='Info4Title'>--Bitcoin Farm Info-- </div>
+                                    <div class="infoInsideBox4"> <p>Cash Made:  <span id="BitcoinFarmsLifeTimeMoneyMade">0</span> </p> </div>
+                                            <div> <button class="container6" onclick="buyUpgradeSpeed4()">upgrade <br>$<img src="https://assets.onecompiler.app/42qfkqgru/42qfktqbz/Screenshot%202024-09-01%205.25.40%20PM.png" class ="img2Size"><span id="upgradeCost4">2550</span></button> </div> 
+                                                  <div class="buttonRed4"><button onclick="sellBitcoinFarm()" id="sellBitcoinFarmButton"> Sell x1 </button>  </div>
+                                                        <div class="info4InsideBox4"> <p>Speed:  <span id="finalMathSpeed4">2800</span> </p> </div>
+                                                              <div class="infoInsideBox44"> <p>Lvl:  <span id="No_Of_Lvl_bitCoinFarm">0</span> </p> </div>
+                                                                    <div class="bitCoinFarmsAmountBox"> <p style="font-size: 8px; ">Bitcoin Farms:  <span id="bitCoinFarms">0</span> </p></div>
+                                                                         <div class="MultiplierBox4"> <p>🔥Multiplier: x<span id="no_of_Multiplier5ButSame">1</span> </p> </div>
+                                                                               <div class="CashPerSecBox4"> <p>Cash per sec: <br>x<span id="bitCoinFarmsCashPerSec">0</span> </p> </div>
+
+                     
+                     
+                      </div>
+
+
+
+                      <div class="info2" id="info2">
+                                <img src="https://assets.onecompiler.app/42qfkqgru/42qfktqbz/Screenshot_2024-09-07_4.06.49_PM-removebg-preview.png" class="img13Size">
+                           <div class='innerBoxInfo2'> </div>
+                               <div class="Info2Title"> --Factory Info-- </div>
+                                       <div class="infoInsideBox1"> <p>Cash Made:  <span id="factorysLifeTimeMoneyMade">0</span> </p> </div>
+                                            <div> <button class="container5" onclick="buyUpgradeSpeed2()">upgrade <br>$<img src="https://assets.onecompiler.app/42qfkqgru/42qfktqbz/Screenshot%202024-09-01%205.25.40%20PM.png" class ="img2Size"><span id="upgradeCost2">850</span></button> </div> 
+                                                  <div class="buttonRed4"><button onclick="demolishFactory()" id="demolishFactoryButton"> Sell x1 </button>  </div>
+                                                        <div class="info2InsideBox3"> <p>Speed:  <span id="finalMathSpeed2">1800</span> </p> </div>
+                                                              <div class="infoInsideBox2"> <p>Lvl:  <span id="No_Of_Lvl_Factory">0</span> </p> </div>
+                                                                    <div class="FactoryAmountBox"> <p style="font-size: 8px; ">🏭Factorys:  <span id="no_of_factorys">0</span> </p></div>
+                                                                         <div class="MultiplierBox2"> <p>🔥Multiplier: x<span id="no_of_Multiplier3ButSame">1</span> </p> </div>
+                                                                               <div class="CashPerSecBox2"> <p>Cash per sec: <br>x<span id="factorysCashPerSec">0</span> </p> </div>
+
+                      </div>
+  
+  <div  class="info3" id="info3">
+                <img src="https://assets.onecompiler.app/42qfkqgru/42qfktqbz/Screenshot_2024-09-07_4.06.49_PM-removebg-preview.png" class="img13Size">
+            <div class="innerBoxInfo3"> </div>
+                 <div> <button class="container5" onclick="buyUpgradeSpeed3()">upgrade <br>$<img src="https://assets.onecompiler.app/42qfkqgru/42qfktqbz/Screenshot%202024-09-01%205.25.40%20PM.png" class ="img2Size"><span id="upgradeCost3">1450</span></button> </div> 
+                       <div class="Info3Title"> --Bank Info-- </div>
+                              <div class="infoInsideBox33"> <p>Cash Made:  <span id="banksLifeTimeMoneyMade">0</span> </p> </div>
+                                    <div class="info3InsideBox4"> <p>Speed:  <span id="finalMathSpeed3">2400</span> </p> </div>
+                                            <div class="infoInsideBox55"> <p>Lvl:  <span id="No_Of_Lvl_Bank">0</span> </p> </div>
+                                                  <div class="bankAmountBox"> <p style="font-size: 8px; ">Banks:  <span id="no_of_banks">0</span> </p></div>
+                                                        <div class="buttonRed4"> <button onclick="demolishBank()" id="demolishBankButton"> Sell x1 </button> </div>
+                                                                <div class="MultiplierBox3"> <p>🔥Multiplier: x<span id="no_of_Multiplier4ButSame">1</span> </p> </div>
+                                                                    <div class="CashPerSecBox3"> <p>Cash per sec: <br>x<span id="banksCashPerSec">0</span> </p> </div>
+
+        
+      </div>
+
+      <div class="info1" id="info1">
+          <img src="https://assets.onecompiler.app/42qfkqgru/42qfktqbz/Screenshot_2024-09-07_4.06.49_PM-removebg-preview.png" class="img13Size">
+           <div> <p class="innerBox"> | </p> </div>
+               <div> <button class="container5" onclick="buyUpgradeSpeed()">upgrade <br>$<img src="https://assets.onecompiler.app/42qfkqgru/42qfktqbz/Screenshot%202024-09-01%205.25.40%20PM.png" class ="img2Size"><span id="upgradeCost">450</span></button> </div> 
+                      <div class="InsideBox1"> <p>Cash Made:  <span id="workersLifeTimeMoneyMade">0</span> </p> </div>
+                             <div class="InsideBox2"> <p>Lvl:  <span id="No_Of_Lvl_Printer">0</span> </p> </div>
+                                    <div class="InsideBox3"> <p>Speed:  <span id="finalMathSpeed">1800</span> </p> </div> 
+                                           <div class="Info1Title"> --Printer Info-- </div>
+                                                 <div class="buttonRed"> <button onclick="fireWorker()" id="fireWorkerButton">  Sell x1 </button> </div>
+                                                         <div class=PrinterAmountBox><p>Cash Printers:  <span id="no_of_workers">0</span> </p></div>
+                                                               <div class="MultiplierBox1"> <p>🔥Multiplier: x<span id="no_of_Multiplier2ButSame">1</span> </p> </div>
+                                                                  <div class="CashPerSecBox"> <p>Cash per sec: <br>x<span id="WorkersCashPerSec">0</span> </p> </div>
+  
+          
+        </div>
+
+
+
+                  
+
+                                                                        
+                                                                </div>
+                                                       </div>
+                                              </div>
+                                     </div>
+                              </div>
+                      </div>
+              </div>
+      
+          </div>
+
+
+
+            <div id="collective2Boss" class="bodyStat"> 
+                    <div class="bossStat" id="bossStat"> 
+                        <div class='bossBoxStatDivider0'></div>
+                          <div class='bossBoxStat'>
+                           <button onclick="SummonBoss1()" class="BossSummonButton">Summon </button>
+                           <p class='boss1Location'> Boss <span style='font-size: 20px'> ⋆</span></p>
+                            <p class='bossHealthBox'>Health: <span id="bossHealth" style='color: #c90000; '>1,000</span></p>
+                           <p class='bossRewardBox'> Reward: <span id='bossRewardValue' style="color: #ff00ff">0</span><span style="color: #ff00ff";> cash <span style="color: lightgray";>and</span><span style='color: gold;'> 50g</span></p>
+                            <p class='bossKilled'>Killed: <span id="BossesKilled" style='color: #c90000; '>10,000</span></p>
+                            <p class='SummonBoxPrice'>Summon Price: <span style='color: #ff00ff';>50k</span></p>
+
+            </div>
+                              
+                  <div class='bossBoxStatDivider'></div>
+                  
+                       <div class='bossBoxStat2'>
+                           <p class='boss1Location2'> Golden Boss <span style='font-size: 20px'> ⋆⋆</span></p>
+                            <p class='bossHealthBox2'>Health: <span id="bossHealth2" style='color: #c90000; '>2,500</span></p>
+                           <p class='bossRewardBox2'> Reward: <span id='bossRewardValue2' style="color: #ff00ff">30,000</span><span style="color: #ff00ff";> cash <span style="color: lightgray";>and</span><span style='color: gold;'> 150g</span></p>
+                            <p class='bossKilled2'>Killed: <span id="BossesKilled2" style='color: #c90000; '>0</span></p>
+                            <p class='SummonBoxPrice2'>Summon Price: <span style='color: #ff00ff';>150k</span></p>
+                           <button onclick="SummonBoss2()" class="BossSummonButton2">Summon </button>
+
+                          
+                          </div>
+                              
+                              <div class='bossBoxStatDivider2'></div>
+                                       <div class='bossBoxStat3'>  
+                                   <!--COMING SOON ENTER CODE HERE BOSS INFO   -->
+                                
+                                </div>
+                              
+                              <div class='bossBoxStatDivider3'></div>
+                              
+                                   <div class='bossBoxStat4'>  
+                                   <!--COMING SOON ENTER CODE HERE BOSS INFO   -->
+
+                                   
+                                   </div>
+
+                              <div class='bossBoxStatDivider4'></div>
+
+                                   <div class='bossBoxStat5'>  
+                                   <!--COMING SOON ENTER CODE HERE BOSS INFO   -->
+                                   
+                                   </div>
+                                   
+                        </div>
+                    
+            </div>          
+                              <div class="UpgradeBodyStat" id="upgadeCollective">
+                                <div class='UpgradesStat' id="UpgradesStat"></div>
+                                                    <img src='https://assets.onecompiler.app/42qfkqgru/42qfktqbz/Screenshot_2024-09-08_9.59.51_AM-removebg-preview.png' class='img81Size'>
+                                                  <img src='https://assets.onecompiler.app/42qfkqgru/42qfktqbz/Screenshot_2024-09-08_9.59.51_AM-removebg-preview.png' class='img812Size'>
+                                             <div> <button class="container4" onclick="buyMultiplier()"> Multiplier x1.5 $<span id="multiplierCost">250</span> <img src='https://assets.onecompiler.app/42qfkqgru/42qfktqbz/Screenshot_2024-09-10_2.47.34_PM-removebg-preview.png' class="img032Size"></button> </div>
+                                         <div> <button id="container465" class="container465" onclick="buyUnitUpgrade()">+15 units <span id="UnitUpgradeCost">450</span>g </button></div>
+                                  
+                                </div>
+
+            
+  
+      
+            <script>
+      
+      var statsdiv = document.getElementById("stats");
+      var display = 0
+      var info1div = document.getElementById('info1');
+      var info1display = 0;
+      var Settingsdiv =  document.getElementById("Settings");
+      var Settingsdisplay = 0;
+      var info2div = document.getElementById("info2");
+      var info2display = 0;
+      var info3div = document.getElementById("info3");
+      var info3display = 0;
+      var info4div = document.getElementById('info4');
+      var info4display = 0;
+      var info5div = document.getElementById("info5");
+      var info5display = 0;
+      var bossdiv = document.getElementById('bossStat');
+      var bossdisplay = 0;
+      var Upgradesdiv = document.getElementById('UpgradesStat');
+      var Upgradedisplay = 0;
+
+  
+      
+      
+      //VARIABLES
+      var money = 0;
+      var workers = 0;
+      var moneyMultiplier = 1;
+      var multiplierCost = 250;
+      var clicks = 1;
+      var workerCost = 10;
+      var lifeTimeMoney = 0;
+      var factorys = 0;
+      var factoryCost = 1000;
+      var factoryCosts = [];
+      var BitCoinFarmCosts = [];
+      var bankCosts = [];
+      var banks = 0;
+      var bankCost = 10000;
+      var MoneyVariables = " " ;
+      var seconds = 0;
+      var minutes = 0;
+      var hours = 0;
+      var SpeedUpgradeInt = 0;
+      var speedOne = 800;
+      var upgradeCost = 450;
+      var speedOneCount = 1000;
+      var finalMathSpeed = speedOne + speedOneCount;
+      var workerInterval;
+      var casinoInterval;
+      var factoryInterval;
+      var bankInterval;
+      var bitcoinFarmInterval;
+      var workersLifeTimeMoneyMade = 0;
+      var No_Of_Lvl_Printer = 0;
+      var factorysLifeTimeMoneyMade = 0;
+      var banksLifeTimeMoneyMade = 0;
+      var No_Of_Lvl_Factory = 0;
+      var No_Of_Lvl_Bank = 0;
+      var No_Of_Lvl_bitCoinFarm = 0;
+      var upgradeCost2 = 850;
+      var upgradeCost3 = 1450;
+      var finalMathSpeed2 = 1800;
+      var finalMathSpeed3 = 2400;
+      var bitCoinFarms = 0;
+      var BitCoinFarmCost = 35000;
+      var BitcoinFarmsLifeTimeMoneyMade = 0;
+      var upgradeCost4 = 2550;
+      var finalMathSpeed4 = 2800;
+      var casinoCost = 125000;
+      var casinos = 0;
+      var casinosMakesMoneyValue = 125;
+      var workersMoneyValue = 8;
+      var bitCoinFarmsMoneyValue = 88;
+      var factoryMoneyValue = 28;
+      var banksMoneyValue = 67;
+      var casinosLifeTimeMoneyMade = 0;
+      var upgradeCost5 = 3250;
+      var No_Of_Lvl_casino = 0;
+      var finalMathSpeed5 = 3200;
+      var GiftMoney = 0;
+      var playerLvl = 0;
+      var no_Of_clicks = 0;
+      var WorkersCashPerSec = 0;
+      var bitCoinFarmsCashPerSec = 0;
+      var factorysCashPerSec = 0;
+      var casinosCashPerSec = 0;
+      var banksCashPerSec = 0;
+      var bossHealth = 1000;
+      var bossHealth2 = 2500;
+      
+      var no_of_units = 0;
+      var MAX_NUM_UNITS = 85;
+      var UnitUpgradeCost = 450;
+      var gold = 0;
+      var hasrun = false;
+      var hasrun2 = false;
+      var hasrun3 = false;
+      var hasrun4 = false;
+      var hasrun5 = false;
+      var hasrun6 = false;
+      var bossRewardValue2 =  30000;
+      var bossRewardValue =  10000;
+      var BossesKilled = 0;
+      var BossesKilled2 = 0;
+
+      function ClearData(){
+      
+      money = 0;
+      workers = 0;
+      moneyMultiplier = 1;
+      multiplierCost = 250;
+      clicks = 1;
+      workerCost = 10;
+      lifeTimeMoney = 0;
+      factorys = 0;
+      factoryCost = 1000;
+      factoryCosts = [];
+      BitCoinFarmCosts = [];
+      bankCosts = [];
+      banks = 0;
+      bankCost = 10000;
+      MoneyVariables = " " ;
+      seconds = 0;
+      minutes = 0;
+      hours = 0;
+      SpeedUpgradeInt = 0;
+      speedOne = 800;
+      upgradeCost = 450;
+      speedOneCount = 1000;
+      finalMathSpeed = speedOne + speedOneCount;
+      workerInterval;
+      casinoInterval;
+      factoryInterval;
+      bankInterval;
+      bitcoinFarmInterval;
+      workersLifeTimeMoneyMade = 0;
+      No_Of_Lvl_Printer = 0;
+      factorysLifeTimeMoneyMade = 0;
+      banksLifeTimeMoneyMade = 0;
+      No_Of_Lvl_Factory = 0;
+      No_Of_Lvl_Bank = 0;
+      upgradeCost2 = 850;
+      upgradeCost3 = 1450;
+      finalMathSpeed2 = 1800;
+      finalMathSpeed3 = 2400;
+      bitCoinFarms = 0;
+      BitCoinFarmCost = 35000;
+      BitcoinFarmsLifeTimeMoneyMade = 0;
+      upgradeCost4 = 2550;
+      finalMathSpeed4 = 2800;
+      No_Of_Lvl_bitCoinFarm = 0;
+      workersMoneyValue = 8;
+      bitCoinFarmsMoneyValue = 88;
+      factoryMoneyValue = 28;
+      banksMoneyValue = 67;
+      casinosMakesMoneyValue = 125;
+      casinosLifeTimeMoneyMade = 0;
+      upgradeCost5 = 3250;
+      No_Of_Lvl_casino = 0;
+      finalMathSpeed5 = 3200;
+      casinos = 0;
+      GiftMoney = 0;
+      playerLvl = 0;
+      WorkersCashPerSec = 0;
+      bitCoinFarmsCashPerSec = 0;
+      factorysCashPerSec = 0;
+      casinosCashPerSec = 0;
+      banksCashPerSec = 0;
+      bossHealth = 1000;
+      no_of_units = 0;
+      MAX_NUM_UNITS = 85;
+      UnitUpgradeCost = 450;
+      gold = 0;
+      hasrun = false;
+      hasrun2 = false;
+      hasrun3 = false;
+      hasrun4 = false;
+      hasrun5 = false;
+      hasrun6 = false;
+      bossRewardValue2 =  30000;
+      bossRewardValue =  10000;
+      BossesKilled = 0;
+      BossesKilled2 = 0;
+      
+      
+        updateThese();
+        saveData();
+      }
+
+      
+      function saveData() {
+    const data = {
+        money: money,
+        workers: workers,
+        moneyMultiplier: moneyMultiplier,
+        factorys: factorys,
+        banks: banks,
+        bitCoinFarms: bitCoinFarms,
+        workerCost: workerCost,
+        factorysCost: factorysCost,
+        bankCost: bankCost,
+        bitCoinFarmCost: bitCoinFarmCost,
+        BitCoinFarmCosts: BitCoinFarmCosts,
+        finalMathSpeed: finalMathSpeed,
+        finalMathSpeed2: finalMathSpeed2,
+        finalMathSpeed3: finalMathSpeed3,
+        finalMathSpeed4: finalMathSpeed4,
+        No_Of_Lvl_Bank: No_Of_Lvl_Bank,
+        No_Of_Lvl_Printer: No_Of_Lvl_Printer,
+        No_Of_Lvl_Factory: No_Of_Lvl_Factory,
+        No_Of_Lvl_bitCoinFarm: No_Of_Lvl_bitCoinFarm,
+        upgradeCost: upgradeCost,
+        upgradeCost2: upgradeCost2,
+        upgradeCost3: upgradeCost3,
+        upgradeCost4: upgradeCost4,
+        lifeTimeMoney: lifeTimeMoney,
+        BitcoinFarmsLifeTimeMoneyMade: BitcoinFarmsLifeTimeMoneyMade,
+        factorysLifeTimeMoneyMade: factorysLifeTimeMoneyMade,
+        workersLifeTimeMoneyMade: workersLifeTimeMoneyMade,
+        banksLifeTimeMoneyMade: banksLifeTimeMoneyMade,
+        no_of_Multiplier2ButSame: no_of_Multiplier2ButSame,
+        no_of_Multiplier3ButSame: no_of_Multiplier3ButSame,
+        no_of_Multiplier4ButSame: no_of_Multiplier4ButSame,
+        no_of_Multiplier5ButSame: no_of_Multiplier5ButSame,
+        upgradeCost: upgradeCost,
+        upgradeCost2: upgradeCost2,
+        upgradeCost3: upgradeCost3,
+        upgradeCost4: upgradeCost4,
+        seconds: seconds,
+        minutes: minutes,
+        hours: hours,
+        clicks: clicks,
+        multiplierCost: multiplierCost,
+        workersMoneyValue: workersMoneyValue,
+        bitCoinFarmsMoneyValue: bitCoinFarmsMoneyValue,
+        factoryMoneyValue: factoryMoneyValue,
+        banksMoneyValue: banksMoneyValue,
+        casinosMakesMoneyValue: casinosMakesMoneyValue,
+        casinosLifeTimeMoneyMade: casinosLifeTimeMoneyMade,
+        upgradeCost5: upgradeCost5,
+        No_Of_Lvl_casino: No_Of_Lvl_casino,
+        finalMathSpeed5: finalMathSpeed5,
+        GiftMoney: GiftMoney,
+        playerLvl: playerLvl,
+        no_of_units: no_of_units,
+        MAX_NUM_UNITS: MAX_NUM_UNITS,
+        UnitUpgradeCost: UnitUpgradeCost,
+        gold: gold,
+        hasrun: hasrun,
+        hasrun2: hasrun2,
+        hasrun3: hadrun3,
+        hasrun4: hasrun4,
+        hasrun5: hasrun5,
+        hasrun6: hasrun6,
+        bossRewardValue2: bossRewardValue2,
+        bossRewardValue: bossRewardValue,
+        BossesKilled: BossesKilled,
+        BossesKilled2: BossesKilled2,
+        
+        // Include other variables you want to save
+    };
+    localStorage.setItem('gameData', JSON.stringify(data));
+}
+
+
+      function loadData() {
+    const savedData = localStorage.getItem('gameData');
+    if (savedData) {
+        const data = JSON.parse(savedData);
+        money = data.money || 0;
+        workers = data.workers || 0;
+        moneyMultiplier = data.moneyMultiplier || 1;
+        factorys = data.factorys || 0;
+        banks = data.banks || 0;
+        bitCoinFarms = data.bitCoinFarms || 1;
+        workerCost = data.workerCost || 0;
+        factorysCost = data.factorysCost  || 0;
+        bankCost = data.bankCost  || 0;
+        bitCoinFarmCost = data.bitCoinFarmCost || 0;
+        BitCoinFarmCosts = data.BitCoinFarmCosts || 0;
+        finalMathSpeed = data.finalMathSpeed || 0;
+        finalMathSpeed2 = data.finalMathSpeed2 || 0;
+        finalMathSpeed3 = data.finalMathSpeed3 || 0;
+        finalMathSpeed4 = data.finalMathSpeed4 || 0;
+        No_Of_Lvl_Bank = data.No_Of_Lvl_Bank || 0;
+        No_Of_Lvl_Printer = data.No_Of_Lvl_Printer || 0;
+        No_Of_Lvl_Factory = data.No_Of_Lvl_Factory || 1;
+        No_Of_Lvl_bitCoinFarm = data.No_Of_Lvl_bitCoinFarm || 1;
+        upgradeCost = data.upgradeCost || 0;
+        upgradeCost2 = data.upgradeCost2 || 1;
+        upgradeCost3 = data.upgradeCost3 || 0;
+        upgradeCost4 = data.upgradeCost4 || 1;
+        lifeTimeMoney = data.lifeTimeMoney || 1;
+        BitcoinFarmsLifeTimeMoneyMade = data.BitcoinFarmsLifeTimeMoneyMade || 1;
+        factorysLifeTimeMoneyMade = data.factorysLifeTimeMoneyMade || 1;
+        workersLifeTimeMoneyMade = data.workersLifeTimeMoneyMade || 1;
+        banksLifeTimeMoneyMade = data.banksLifeTimeMoneyMade || 1;
+        no_of_Multiplier2ButSame = data.no_of_Multiplier2ButSame || 1;
+        no_of_Multiplier3ButSame = data.no_of_Multiplier3ButSame || 1;
+        no_of_Multiplier4ButSame = data.no_of_Multiplier4ButSame || 1;
+        no_of_Multiplier5ButSame = data.no_of_Multiplier5ButSame || 1;
+        upgradeCost = data.upgradeCost || 1;
+        upgradeCost2 = data.upgradeCost2 || 0;
+        upgradeCost3 = data.upgradeCost3 || 1;
+        upgradeCost4 = data.upgradeCost4 || 0;
+        seconds = data.seconds || 1;
+        minutes = data.minutes || 1;
+        hours = data.hours || 0;
+        clicks = data.clicks || 0;
+        multiplierCost = data.multiplierCost || 1;
+        workersMoneyValue = data.workersMoneyValue || 1;
+        bitCoinFarmsMoneyValue = data.bitCoinFarmsMoneyValue || 0;
+        factoryMoneyValue = data.factoryMoneyValue || 0;
+        banksMoneyValue = data.banksMoneyValue || 0;
+        casinosMakesMoneyValue = data.casinosMakesMoneyValue || 1;
+        casinosLifeTimeMoneyMade = data.casinosLifeTimeMoneyMade || 0;
+        upgradeCost5 = data.upgradeCost5 || 0;
+        No_Of_Lvl_casino = data.No_Of_Lvl_casino || 0;
+        finalMathSpeed5 = data.finalMathSpeed5 || 1;
+        GiftMoney = data.GiftMoney || 0;
+        playerLvl = data.playerLvl || 0;    
+        no_of_units = data.no_of_units || 0;    
+        MAX_NUM_UNITS = data.MAX_NUM_UNITS || 1;    
+        UnitUpgradeCost = data.UnitUpgradeCost || 0;    
+        gold = data.gold || 1;       
+        hasrun = data.hasrun || 0;    
+        hasrun2 = data.hasrun2 || 1;    
+        hasrun3 = data.hadrun3 || 0;    
+        hasrun4 = data.hasrun4 || 0;    
+        hasrun5 = data.hasrun5 || 1;    
+        hasrun6 = data.hasrun6 || 0;    
+        bossRewardValue2 = data.bossRewardValue2 || 0;    
+        bossRewardValue = data.bossRewardValue || 0;    
+        BossesKilled = data.BossesKilled || 0;    
+        BossesKilled2 = data.BossesKilled2 || 0;    
+        
+        // Load other variables
+        updateThese();
+    }
+}
+
+
+      var div = document.getElementById("stats");
+      var display = 0
+      
+      
+      function endBoss2(){
+        
+          document.getElementById("boss2").style.display = "none";
+          document.getElementById("but").style.display = "block";
+          document.getElementById("bossHealthBar3").style.width = "350px";
+          document.getElementById("bossHealthBar3").style.display = "none";
+          document.getElementById("bossHealthBar4").style.display = "none";
+          document.getElementById("BossText2").style.display = "none"; 
+          document.getElementById("endBoss2").style.display = "none";
+          setTimeout(Loss, 50);
+                    }
+                    
+      function endBoss(){
+                  document.getElementById("boss").style.display = "none";
+          document.getElementById("but").style.display = "block";
+          document.getElementById("bossHealthBar").style.width ="350";
+          document.getElementById("bossHealthBar").style.display = "none";
+          document.getElementById("bossHealthBar2").style.display = "none";
+          document.getElementById("BossText").style.display = "none"; 
+          document.getElementById("endBoss1").style.display = "none";
+                    setTimeout(Loss, 50);
+
+
+      }
+      
+      function createBoss2(){
+        document.getElementById("boss2").style.display = "block";
+        document.getElementById("bossHealthBar3").style.display = "block";
+        document.getElementById("bossHealthBar4").style.display = "block";
+        document.getElementById("BossText2").style.display = "block";
+        document.getElementById("endBoss2").style.display = "block";
+        
+        document.getElementById("but").style.display = "none";
+        
+          info3div.style.display = "none";
+          display = 1;
+          info1div.style.display = "none";
+          display = 1;
+          Settingsdiv.style.display = "none";
+          display = 1;
+          info2div.style.display = "none";
+          display = 1;
+          statsdiv.style.display = "none";
+          display = 1;
+          info4div.style.display = "none";
+          display = 1;
+           info5div.style.display = "none";
+          display = 1;
+      }
+      function createBoss(){
+        document.getElementById("boss").style.display = "block";
+        document.getElementById("bossHealthBar").style.display = "block";
+        document.getElementById("bossHealthBar2").style.display = "block";
+        document.getElementById("BossText").style.display = "block";
+        document.getElementById("endBoss1").style.display = "block";
+        
+        document.getElementById("but").style.display = "none";
+        
+          info3div.style.display = "none";
+          display = 1;
+          info1div.style.display = "none";
+          display = 1;
+          Settingsdiv.style.display = "none";
+          display = 1;
+          info2div.style.display = "none";
+          display = 1;
+          statsdiv.style.display = "none";
+          display = 1;
+          info4div.style.display = "none";
+          display = 1;
+           info5div.style.display = "none";
+          display = 1;
+      }
+      
+      function bossLoseHealth2(){
+        bossHealth2 -= 1;
+        
+         updateThese();
+         
+         
+        if(bossHealth2 == 2450)document.getElementById("bossHealthBar3").style.width = "345";
+        if(bossHealth2 == 2350)document.getElementById("bossHealthBar3").style.width = "340";
+        if(bossHealth2 == 2200)document.getElementById("bossHealthBar3").style.width = "335";
+        if(bossHealth2 == 2150)document.getElementById("bossHealthBar3").style.width = "330";
+        if(bossHealth2 == 2100)document.getElementById("bossHealthBar3").style.width = "325";
+        if(bossHealth2 == 2050)document.getElementById("bossHealthBar3").style.width = "320";
+        if(bossHealth2 == 2000)document.getElementById("bossHealthBar3").style.width = "315";
+        if(bossHealth2 == 1950)document.getElementById("bossHealthBar3").style.width = "310";
+        if(bossHealth2 == 1900)document.getElementById("bossHealthBar3").style.width = "305";
+        if(bossHealth2 == 1850)document.getElementById("bossHealthBar3").style.width = "300";
+        if(bossHealth2 == 1800)document.getElementById("bossHealthBar3").style.width = "295";
+        if(bossHealth2 == 1750)document.getElementById("bossHealthBar3").style.width = "290";
+        if(bossHealth2 == 1700)document.getElementById("bossHealthBar3").style.width = "285";
+        if(bossHealth2 == 1650)document.getElementById("bossHealthBar3").style.width = "280";
+        if(bossHealth2 == 1600)document.getElementById("bossHealthBar3").style.width = "275";
+        if(bossHealth2 == 1550)document.getElementById("bossHealthBar3").style.width = "270";
+        if(bossHealth2 == 1500)document.getElementById("bossHealthBar3").style.width = "265";
+        if(bossHealth2 == 1450)document.getElementById("bossHealthBar3").style.width = "260";
+        if(bossHealth2 == 1400)document.getElementById("bossHealthBar3").style.width = "255";
+        if(bossHealth2 == 1350)document.getElementById("bossHealthBar3").style.width = "250";
+        if(bossHealth2 == 1300)document.getElementById("bossHealthBar3").style.width = "245";
+        if(bossHealth2 == 1250)document.getElementById("bossHealthBar3").style.width = "220";
+        if(bossHealth2 == 1200)document.getElementById("bossHealthBar3").style.width = "210";
+        if(bossHealth2 == 1150)document.getElementById("bossHealthBar3").style.width = "200";
+        if(bossHealth2 == 1100)document.getElementById("bossHealthBar3").style.width = "180";
+        if(bossHealth2 == 1050)document.getElementById("bossHealthBar3").style.width = "165";
+        if(bossHealth2 == 1000)document.getElementById("bossHealthBar3").style.width = "150";        
+        if(bossHealth2 == 950)document.getElementById("bossHealthBar3").style.width = "130";
+        if(bossHealth2 == 900)document.getElementById("bossHealthBar3").style.width = "115";
+        if(bossHealth2 == 850)document.getElementById("bossHealthBar3").style.width = "100";
+        if(bossHealth2 == 800)document.getElementById("bossHealthBar3").style.width = "96";
+        if(bossHealth2 == 750)document.getElementById("bossHealthBar3").style.width = "92";
+        if(bossHealth2 == 700)document.getElementById("bossHealthBar3").style.width = "86";
+        if(bossHealth2 == 650)document.getElementById("bossHealthBar3").style.width = "82";
+        if(bossHealth2 == 600)document.getElementById("bossHealthBar3").style.width = "77";
+        if(bossHealth2 == 550)document.getElementById("bossHealthBar3").style.width = "71";
+        if(bossHealth2 == 500)document.getElementById("bossHealthBar3").style.width = "66";        
+        if(bossHealth2 == 450)document.getElementById("bossHealthBar3").style.width = "60";
+        if(bossHealth2 == 400)document.getElementById("bossHealthBar3").style.width = "53";
+        if(bossHealth2 == 350)document.getElementById("bossHealthBar3").style.width = "50";
+        if(bossHealth2 == 300)document.getElementById("bossHealthBar3").style.width = "47";
+        if(bossHealth2 == 250)document.getElementById("bossHealthBar3").style.width = "44";
+        if(bossHealth2 == 200)document.getElementById("bossHealthBar3").style.width = "40";
+        if(bossHealth2 == 150)document.getElementById("bossHealthBar3").style.width = "38";
+        if(bossHealth2 == 100)document.getElementById("bossHealthBar3").style.width = "36";
+        if(bossHealth2 == 80)document.getElementById("bossHealthBar3").style.width = "34";
+        if(bossHealth2 == 70)document.getElementById("bossHealthBar3").style.width = "30"; 
+        if(bossHealth2 == 60)document.getElementById("bossHealthBar3").style.width = "28";
+        if(bossHealth2 == 50)document.getElementById("bossHealthBar3").style.width = "25";
+        if(bossHealth2 == 40)document.getElementById("bossHealthBar3").style.width = "21";
+        if(bossHealth2 == 35)document.getElementById("bossHealthBar3").style.width = "18";
+        if(bossHealth2 == 30)document.getElementById("bossHealthBar3").style.width = "16";        
+        if(bossHealth2 == 25)document.getElementById("bossHealthBar3").style.width = "13";
+        if(bossHealth2 == 20)document.getElementById("bossHealthBar3").style.width = "11";
+        if(bossHealth2 == 15)document.getElementById("bossHealthBar3").style.width = "10";
+        if(bossHealth2 == 10)document.getElementById("bossHealthBar3").style.width = "5";
+        if(bossHealth2 == 4)document.getElementById("bossHealthBar3").style.width = "3";        
+        if(bossHealth2 == 0)document.getElementById("bossHealthBar3").style.width = "0";     
+         
+         
+        if(bossHealth2 <= 0){
+          money += bossRewardValue2;
+          
+          document.getElementById("boss2").style.display = "none";
+          document.getElementById("but").style.display = "block";
+          document.getElementById("bossHealthBar3").style.width = "350px";
+          document.getElementById("bossHealthBar3").style.display = "none";
+          document.getElementById("bossHealthBar4").style.display = "none";
+          document.getElementById("BossText2").style.display = "none";          
+          bossHealth2 = 2500;
+          gold += 150;
+          BossesKilled2 += 1;
+          document.getElementById("endBoss2").style.display = "none";
+
+          
+          setTimeout(Victory, 50);
+          updateThese();
+
+        }
+        
+        
+      }
+      function bossLoseHealth(){
+        bossHealth -= 1;
+        
+         updateThese();
+
+
+        if(bossHealth == 990)document.getElementById("bossHealthBar").style.width = "345";
+        if(bossHealth == 980)document.getElementById("bossHealthBar").style.width = "340";
+        if(bossHealth == 970)document.getElementById("bossHealthBar").style.width = "335";
+        if(bossHealth == 960)document.getElementById("bossHealthBar").style.width = "330";
+        if(bossHealth == 950)document.getElementById("bossHealthBar").style.width = "325";
+        if(bossHealth == 940)document.getElementById("bossHealthBar").style.width = "320";
+        if(bossHealth == 930)document.getElementById("bossHealthBar").style.width = "315";
+        if(bossHealth == 920)document.getElementById("bossHealthBar").style.width = "310";
+        if(bossHealth == 910)document.getElementById("bossHealthBar").style.width = "305";
+        if(bossHealth == 900)document.getElementById("bossHealthBar").style.width = "300";
+        if(bossHealth == 890)document.getElementById("bossHealthBar").style.width = "295";
+        if(bossHealth == 860)document.getElementById("bossHealthBar").style.width = "290";
+        if(bossHealth == 840)document.getElementById("bossHealthBar").style.width = "285";
+        if(bossHealth == 820)document.getElementById("bossHealthBar").style.width = "280";
+        if(bossHealth == 800)document.getElementById("bossHealthBar").style.width = "275";
+        if(bossHealth == 780)document.getElementById("bossHealthBar").style.width = "270";
+        if(bossHealth == 750)document.getElementById("bossHealthBar").style.width = "265";
+        if(bossHealth == 720)document.getElementById("bossHealthBar").style.width = "260";
+        if(bossHealth == 690)document.getElementById("bossHealthBar").style.width = "255";
+        if(bossHealth == 670)document.getElementById("bossHealthBar").style.width = "250";
+        if(bossHealth == 640)document.getElementById("bossHealthBar").style.width = "245";
+        if(bossHealth == 610)document.getElementById("bossHealthBar").style.width = "220";
+        if(bossHealth == 580)document.getElementById("bossHealthBar").style.width = "210";
+        if(bossHealth == 540)document.getElementById("bossHealthBar").style.width = "200";
+        if(bossHealth == 510)document.getElementById("bossHealthBar").style.width = "180";
+        if(bossHealth == 470)document.getElementById("bossHealthBar").style.width = "165";
+        if(bossHealth == 440)document.getElementById("bossHealthBar").style.width = "150";        
+        if(bossHealth == 420)document.getElementById("bossHealthBar").style.width = "130";
+        if(bossHealth == 390)document.getElementById("bossHealthBar").style.width = "115";
+        if(bossHealth == 380)document.getElementById("bossHealthBar").style.width = "100";
+        if(bossHealth == 350)document.getElementById("bossHealthBar").style.width = "96";
+        if(bossHealth == 330)document.getElementById("bossHealthBar").style.width = "92";
+        if(bossHealth == 310)document.getElementById("bossHealthBar").style.width = "86";
+        if(bossHealth == 290)document.getElementById("bossHealthBar").style.width = "82";
+        if(bossHealth == 270)document.getElementById("bossHealthBar").style.width = "77";
+        if(bossHealth == 240)document.getElementById("bossHealthBar").style.width = "71";
+        if(bossHealth == 210)document.getElementById("bossHealthBar").style.width = "66";        
+        if(bossHealth == 190)document.getElementById("bossHealthBar").style.width = "60";
+        if(bossHealth == 180)document.getElementById("bossHealthBar").style.width = "53";
+        if(bossHealth == 165)document.getElementById("bossHealthBar").style.width = "50";
+        if(bossHealth == 150)document.getElementById("bossHealthBar").style.width = "47";
+        if(bossHealth == 140)document.getElementById("bossHealthBar").style.width = "44";
+        if(bossHealth == 120)document.getElementById("bossHealthBar").style.width = "40";
+        if(bossHealth == 100)document.getElementById("bossHealthBar").style.width = "38";
+        if(bossHealth == 90)document.getElementById("bossHealthBar").style.width = "36";
+        if(bossHealth == 80)document.getElementById("bossHealthBar").style.width = "34";
+        if(bossHealth == 70)document.getElementById("bossHealthBar").style.width = "30"; 
+        if(bossHealth == 60)document.getElementById("bossHealthBar").style.width = "28";
+        if(bossHealth == 50)document.getElementById("bossHealthBar").style.width = "25";
+        if(bossHealth == 40)document.getElementById("bossHealthBar").style.width = "23";
+        if(bossHealth == 35)document.getElementById("bossHealthBar").style.width = "20";
+        if(bossHealth == 30)document.getElementById("bossHealthBar").style.width = "18";        
+        if(bossHealth == 25)document.getElementById("bossHealthBar").style.width = "15";
+        if(bossHealth == 20)document.getElementById("bossHealthBar").style.width = "12";
+        if(bossHealth == 15)document.getElementById("bossHealthBar").style.width = "10";
+        if(bossHealth == 10)document.getElementById("bossHealthBar").style.width = "5";
+        if(bossHealth == 4)document.getElementById("bossHealthBar").style.width = "3";        
+        if(bossHealth == 0)document.getElementById("bossHealthBar").style.width = "0";        
+
+        if(bossHealth <= 0){
+          money += bossRewardValue;
+          
+          document.getElementById("boss").style.display = "none";
+          document.getElementById("but").style.display = "block";
+          document.getElementById("bossHealthBar").style.width ="350px";
+          document.getElementById("bossHealthBar").style.display = "none";
+          document.getElementById("bossHealthBar2").style.display = "none";
+          document.getElementById("BossText").style.display = "none";          
+          bossHealth = 1000;
+          gold += 50;
+          BossesKilled += 1;
+          document.getElementById("endBoss1").style.display = "none";
+
+          
+          setTimeout(Victory, 50);
+          updateThese();
+
+        }
+        
+        
+      }
+      function Loss(){
+          document.getElementById("lossBox").style.display = "block";
+
+      }
+      
+
+      function Victory(){
+          document.getElementById("victoryBox").style.display = "block";
+
+      }
+      
+      
+      
+      
+      function createGiftBox(){
+        document.getElementById("giftBox").style.display = "block";
+        updateThese();
+      }
+      
+      function createGiftBox2(){
+        document.getElementById('giftBox2').style.display = "block";
+        updateThese();
+      }
+      function claimGift(){
+        GiftMoney += 2500 * moneyMultiplier;
+        money += GiftMoney;
+        document.getElementById('giftDisplayMoney').style.display = 'block';
+        document.getElementById("giftBox").style.display = "none";
+        
+        updateThese();
+      }
+      
+            function claimGift2(){
+        GiftMoney += 7500 * moneyMultiplier;
+        money += GiftMoney;
+        document.getElementById("giftDisplayMoney").style.display = "block";
+        document.getElementById("giftBox2").style.display = "none";
+        updateThese();
+      }
+      
+      function showStatsorHide(){
+        if (display === 1){
+          div.style.display = "block";
+          display = 0;
+          
+        } else {
+          
+          div.style.display = "none";
+          display = 1;
+        }
+        
+        
+      }
+      
+      function TimeSeconds(){
+        seconds += 1;
+        
+       updateThese();
+       
+      }
+      
+      function TimeMinutes(){
+        if (seconds >= 60){
+          seconds -= 60;
+          minutes += 1;
+          
+          updateThese();
+        }
+      }
+        function TimeHours(){
+        if (minutes >= 60){
+          minutes -= 60;
+          hours += 1;
+
+        updateThese();
+      }
+        }
+        function SummonBoss2(){
+          if (money >= 150000){
+            money -= 150000;
+            setTimeout(createBoss2, 300);
+            document.getElementById('BossSummonedBox').style.display = 'block';
+
+            updateThese();
+          }
+        }
+        function SummonBoss1(){
+         if (money >= 50000){
+           money -= 50000;
+          setTimeout(createBoss, 300);
+          document.getElementById('BossSummonedBox').style.display = 'block';
+
+          
+          updateThese();
+          
+         }
+        }
+      function makeMoney(){
+            money += moneyMultiplier;
+            clicks = moneyMultiplier;
+            lifeTimeMoney += moneyMultiplier;
+            no_Of_clicks += 1;
+              
+              updateThese();
+
+            
+            
+              }
+   
+      
+      function resetingMoney(){
+        WorkersCashPerSec = 0;
+        bitCoinFarmsCashPerSec = 0;
+        factorysCashPerSec = 0;
+        banksCashPerSec = 0;
+        bitCoinFarmsCashPerSec = 0;
+        casinosCashPerSec = 0;
+        
+        updateThese();
+        
+      }
+
+
+      function buyMultiplier(){
+        if(money >= multiplierCost){
+          moneyMultiplier *= 1.6;
+          money -= multiplierCost;
+          multiplierCost = multiplierCost * 2.6;
+          clicks = moneyMultiplier;
+          
+          updateThese();
+          saveData();
+          }
+      }
+      
+      function executeCommand(){
+        var command = document.getElementById("commandInput").value;
+        
+        if (command == "Money500"){
+          money = money + 500;
+          document.getElementById("commandInput").value = " ✅  Recieved $500 ✅ ";
+          updateThese();
+          saveData();
+
+        }
+        
+        if (command == "Worker1"){
+          workers = workers + 5;
+          document.getElementById("commandInput").value = " ✅  Recieved 1 worker! ✅ ";
+          updateThese();
+          saveData();
+        }
+        
+        if(command == "Factory1"){
+          factorys = factorys + 5;
+          document.getElementById("commandInput").value = " ✅  Recieved 1 factory!  ✅ ";
+          updateThese();
+          saveData();
+        }
+        
+        if(command == "Money10k"){
+          money = money + 12500000000000;
+          document.getElementById("commandInput").value = "✅  Recieved 10k ✅  ";
+          updateThese();
+          saveData();
+        } 
+        if (command == "BossHealth200"){
+          document.getElementById("bossHealthBar").style.width = "66";
+          bossHealth = 200;
+          updateThese();
+          saveData();
+        }
+        if (command == "SummonBoss1"){
+            setTimeout(createBoss, 300);
+                
+        }
+        if (command == "Gold750"){
+          gold += 750;
+          updateThese();
+        }
+        if (command == "SummonBoss2"){
+          setTimeout(createBoss2, 300);
+          updateThese();
+        }
+        if (command == "BossHealth2200"){
+          document.getElementById("bossHealthBar3").style.width = "66";
+          bossHealth2 = 200;
+          updateThese();
+        }
+      }
+      
+      
+      
+//=========================================================================
+// BUILD MONEY MAMKERS
+        
+            function buildBitCoinFarm(){
+           if (no_of_units < MAX_NUM_UNITS){
+          if (money >= BitCoinFarmCost){
+            money -= BitCoinFarmCost;
+            bitCoinFarms += 1;
+            BitCoinFarmCost *= 1.6;
+            no_of_units += 1;
+
+            
+            saveData();
+            updateThese();
+            
+             
+          if (bitCoinFarms > 0){
+        document.getElementById("sellBitcoinFarmButton").style.display = "block";
+          }
+        }
+          }
+        }
+        
+      function buildBank(){
+         if (no_of_units < MAX_NUM_UNITS){
+        if (money >= bankCost){
+            money -= bankCost;
+            bankCosts.push(bankCost);
+            bankCost = bankCost * 1.9;
+            banks = banks + 1;
+            no_of_units += 1;
+            
+            saveData();
+            updateThese();
+        }
+            if (banks > 0){
+              document.getElementById("demolishBankButton").style.display = "block";
+            }
+        }
+          
+      }
+        
+        
+        function BuildFactory(){
+           if (no_of_units < MAX_NUM_UNITS){
+          if(money >= factoryCost){
+            money -= factoryCost;
+            no_of_units += 1;
+            
+            factoryCost = factoryCost * 1.4;
+            factorys = factorys + 1;
+          saveData();
+          updateThese();
+
+        }
+        if(factorys > 0){
+            document.getElementById("demolishFactoryButton").style.display = "block";
+        }
+           }
+      
+  }
+  
+  
+          function buildCasino(){
+           if (no_of_units < MAX_NUM_UNITS){
+          if (money >= casinoCost){
+          casinos = casinos + 1;
+          money = money - casinoCost;
+          casinoCost = casinoCost * 2.4;
+            no_of_units += 1;
+          
+          updateThese();
+        }
+        if(casinos > 0){
+            document.getElementById("sellcasinoButton").style.display = "block";
+            updateThese();
+        }
+        
+        }
+    }
+       function hireWorker(){
+
+            
+        if (no_of_units < MAX_NUM_UNITS){
+          
+        
+        if (money >= workerCost){
+          workers = workers + 1;
+          money = money - workerCost;
+          workerCost = workerCost * 1.7;
+            no_of_units += 1;
+            
+            
+          saveData();
+          updateThese();
+          
+            }
+        if(workers > 0){
+            document.getElementById("fireWorkerButton").style.display = "block";
+            updateThese();
+            }
+            
+        }
+    }
+          
+  
+  
+  
+  //=========================================================================
+  //SELL MONEY MAKERS
+  
+            function fireWorker(){
+        if (workers >= 1){
+          workers = workers - 1;
+          money = money + (workerCost / 2);
+          workerCost -= workerCost / 2;
+              no_of_units -= 1;
+
+          saveData();
+          updateThese();
+      
+      if (workers == 0){
+        document.getElementById("fireWorkerButton").style.display = "none";
+        
+        }
+        
+      }
+}     
+      function demolishFactory(){
+        if (factorys >= 1){
+          factorys = factorys - 1;
+          no_of_units -= 1;
+
+          factoryCost /=  1.4;
+          money += (factoryCost * 0.7);
+
+          saveData();
+          updateThese();
+        
+        
+          if (factorys == 0){
+        document.getElementById("demolishFactoryButton").style.display = "none";
+        
+
+        }
+        
+      }
+  }
+      function demolishBank(){
+        if(banks >= 1){
+          banks = banks - 1;
+          var lastBankCost = bankCosts.pop();
+          money = money + (lastBankCost / 2);
+          bankCost = lastBankCost - 1.1 + 1;
+          no_of_units -= 1;
+
+          saveData();
+          updateThese();
+        }
+          if (banks == 0){
+            document.getElementById("demolishBankButton").style.display = "none";
+          
+        }
+      }
+      
+     function casinoMakesMoney(){
+     if(casinos >= 1){
+          money = money + (casinosMakesMoneyValue * casinos * moneyMultiplier);
+          lifeTimeMoney += (casinosMakesMoneyValue * casinos * moneyMultiplier );
+          casinosLifeTimeMoneyMade += (casinosMakesMoneyValue * casinos * moneyMultiplier);
+          casinosCashPerSec += (casinosMakesMoneyValue * casinos * moneyMultiplier);
+          
+          updateThese();
+        }
+      }
+      
+      function bankMakesMoney(){
+        if(banks >= 1){
+          money = money + (banksMoneyValue * banks * moneyMultiplier);
+          lifeTimeMoney += (banksMoneyValue * banks * moneyMultiplier);
+          banksLifeTimeMoneyMade += (banksMoneyValue * banks *moneyMultiplier);
+          banksCashPerSec += (banksMoneyValue * banks *moneyMultiplier);
+          updateThese();
+        }
+      }
+      
+            function workersMakesMoney(){
+        if(workers >= 1){
+          money = money + (workersMoneyValue * workers * moneyMultiplier);
+          lifeTimeMoney += (workersMoneyValue * workers * moneyMultiplier);
+          workersLifeTimeMoneyMade += (workersMoneyValue * workers * moneyMultiplier);
+          WorkersCashPerSec += (workersMoneyValue * workers * moneyMultiplier);
+          updateThese();
+        }
+  }
+      function bitcoinMakesMoney(){
+        if (bitCoinFarms >= 1){
+          money = money + (bitCoinFarmsMoneyValue * bitCoinFarms * moneyMultiplier);
+          
+          BitcoinFarmsLifeTimeMoneyMade += (bitCoinFarmsMoneyValue * bitCoinFarms * moneyMultiplier);
+          lifeTimeMoney += (bitCoinFarmsMoneyValue * bitCoinFarms *moneyMultiplier);
+          bitCoinFarmsCashPerSec += (bitCoinFarmsMoneyValue * bitCoinFarms *moneyMultiplier);
+          updateThese();
+        }
+      }
+      
+      function FactoryMakesMoney(){
+        if (factorys >= 1){
+          money = money + (factoryMoneyValue * factorys * moneyMultiplier);
+          lifeTimeMoney += (factoryMoneyValue * factorys * moneyMultiplier);
+          factorysLifeTimeMoneyMade += (factoryMoneyValue * factorys * moneyMultiplier);
+          factorysCashPerSec += (factoryMoneyValue * factorys * moneyMultiplier);
+
+          updateThese();
+
+        }
+        
+        
+      }
+      
+         
+      
+     function formatNumberWithCommas(number) {
+    // Convert number to a string
+    const parts = number.toString().split('.');
+    
+    // Format the integer part with commas
+    parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+
+    // Return the formatted number
+    return parts.join('.');
+      }
+      
+
+      
+      function updateThese(){
+          
+          let moneyDisplay = money;
+          let moneySufix = " ";
+          
+          if (money <= 1000){
+            moneyDisplay = (money).toFixed(0);
+            moneySufix = "";
+            
+          }else if (money < 1000000){
+            moneyDisplay = (money / 1000 ).toFixed(3);
+            moneySufix = "K";
+           
+          }else if (money < 1000000000){
+            moneyDisplay = (money / 1000 ).toFixed(3);
+            moneySufix = "M";
+            
+          }else if (money < 1000000000000){
+            moneyDisplay = (money / 1000 ).toFixed(3);
+            moneySufix = "B";
+            
+          }else if (money < 1000000000000000){
+            moneyDisplay = (money / 1000 ).toFixed(3);
+            moneySufix = "T";
+
+          }else if (money < 1000000000000000000){
+            moneyDisplay = (money / 1000 ).toFixed(3);
+            moneySufix = "Qd";
+          
+            
+          }
+          
+          if (workers == 0){
+            document.getElementById("fireWorkerButton").style.display = "none";
+        
+        }
+          
+          if(workers > 0){
+            document.getElementById("fireWorkerButton").style.display = "block";
+        }
+        
+          if (factorys == 0){
+            document.getElementById("demolishFactoryButton").style.display = "none";
+        
+        }
+          
+          if(factorys > 0){
+            document.getElementById("demolishFactoryButton").style.display = "block";
+        }
+        
+        if (banks == 0){
+            document.getElementById("demolishBankButton").style.display = "none";
+        
+        }
+          
+          if(banks > 0){
+            document.getElementById("demolishBankButton").style.display = "block";
+        }
+          
+          if (bitCoinFarms == 0){
+        document.getElementById("sellBitcoinFarmButton").style.display = "none";
+        
+        }
+          
+          if (bitCoinFarms > 0){
+        document.getElementById("sellBitcoinFarmButton").style.display = "block";
+        
+        }
+          
+        if (casinos == 0){
+        document.getElementById("sellcasinoButton").style.display = "none";
+        
+        }
+          
+          if (casinos > 0){
+        document.getElementById("sellcasinoButton").style.display = "block";
+        
+        }
+        
+        if (workers > 9 || factorys > 6){
+          playerLvl = 1;
+
+        }
+        if (factorys >= 12 || banks >= 7){
+
+          playerLvl = 2;
+        }
+        if (banks >= 12 || bitCoinFarms >= 7){
+
+          playerLvl = 3;
+        }
+        if (bitCoinFarms >= 12 || casinos >= 7){
+
+          playerLvl = 4;
+        }
+        if (bitCoinFarms >= 28 || casinos >= 21){
+
+          playerLvl = 5;
+        }
+        if (bitCoinFarms >= 44 || casinos >= 38){
+
+          playerLvl = 6;
+        }
+        
+          bossRewardValue =  10000 * moneyMultiplier;
+          bossRewardValue2 =  30000 * moneyMultiplier;
+
+        
+        
+          document.getElementById("no_of_Multiplier").innerHTML = Math.round(moneyMultiplier * 10) / 10;
+          document.getElementById("no_of_Multiplier2ButSame").innerHTML = Math.round(moneyMultiplier * 10) / 10;
+          document.getElementById("no_of_Multiplier5ButSame").innerHTML = Math.round(moneyMultiplier * 10) / 10;
+          document.getElementById("no_of_Multiplier3ButSame").innerHTML = Math.round(moneyMultiplier * 10) / 10;
+          document.getElementById("no_of_Multiplier4ButSame").innerHTML = Math.round(moneyMultiplier * 10) / 10;
+          document.getElementById("no_of_Multiplier6ButSame").innerHTML = Math.round(moneyMultiplier * 10) / 10;
+          document.getElementById("multiplierCost").innerHTML = (formatNumberWithCommas(Math.round(multiplierCost)));
+          document.getElementById("no_Clciks").innerHTML = (formatNumberWithCommas(Math.round(clicks * 1)));
+          document.getElementById("workerCost").innerHTML = (formatNumberWithCommas(Math.round(workerCost)));
+          document.getElementById("casinoCost").innerHTML = (formatNumberWithCommas(Math.round(casinoCost)));
+          document.getElementById("no_of_money").innerHTML = (formatNumberWithCommas(moneyDisplay + moneySufix));
+          document.getElementById("no_of_workers").innerHTML = (formatNumberWithCommas(workers));
+          document.getElementById("no_of_banks").innerHTML = (formatNumberWithCommas(banks));
+          document.getElementById("upgradeCost5").innerHTML = (upgradeCost5 === "MAX") ? "MAX" : (formatNumberWithCommas(Math.round(upgradeCost5)));
+          document.getElementById("finalMathSpeed5").innerHTML = finalMathSpeed5;
+          document.getElementById("no_Of_clicks").innerHTML = (formatNumberWithCommas(no_Of_clicks));
+          document.getElementById("No_Of_Lvl_casino").innerHTML = (formatNumberWithCommas(No_Of_Lvl_casino));
+          document.getElementById("casinosLifeTimeMoneyMade").innerHTML = (formatNumberWithCommas(Math.round(casinosLifeTimeMoneyMade)));
+          document.getElementById("factoryCost").innerHTML = (formatNumberWithCommas(Math.round(factoryCost)));
+          document.getElementById("bankCost").innerHTML = (formatNumberWithCommas(Math.round(bankCost)));
+          document.getElementById("no_of_factorys").innerHTML = (formatNumberWithCommas(Math.round(factorys)));
+          document.getElementById("no_of_casinos").innerHTML = (formatNumberWithCommas(Math.round(casinos)));
+          document.getElementById("lifeTimeMoney").innerHTML = (formatNumberWithCommas(Math.round(lifeTimeMoney)));
+          document.getElementById("no_of_Seconds").innerHTML = seconds;
+          document.getElementById("no_of_Minutes").innerHTML = minutes;
+          document.getElementById("no_of_Hours").innerHTML = hours;
+          document.getElementById("playerLvl").innerHTML = playerLvl;
+          document.getElementById("upgradeCost").innerHTML = (upgradeCost === "MAX") ? "MAX" : (formatNumberWithCommas(Math.round(upgradeCost)));
+          document.getElementById("workersLifeTimeMoneyMade").innerHTML = (formatNumberWithCommas(Math.round(workersLifeTimeMoneyMade)));
+          document.getElementById("No_Of_Lvl_Printer").innerHTML = (formatNumberWithCommas(No_Of_Lvl_Printer));
+          document.getElementById("finalMathSpeed").innerHTML = finalMathSpeed;
+          document.getElementById("upgradeCost2").innerHTML = (upgradeCost2 === "MAX") ? "MAX" : (formatNumberWithCommas(Math.round(upgradeCost2)));
+          document.getElementById("upgradeCost3").innerHTML = (upgradeCost3 === "MAX") ? "MAX" : (formatNumberWithCommas(Math.round(upgradeCost3)));
+          document.getElementById("factorysLifeTimeMoneyMade").innerHTML = (formatNumberWithCommas(Math.round(factorysLifeTimeMoneyMade)));
+          document.getElementById("finalMathSpeed2").innerHTML = finalMathSpeed2;
+          document.getElementById("banksLifeTimeMoneyMade").innerHTML = (formatNumberWithCommas(Math.round(banksLifeTimeMoneyMade)));
+          document.getElementById("finalMathSpeed3").innerHTML = finalMathSpeed3;
+          document.getElementById("No_Of_Lvl_Factory").innerHTML = (formatNumberWithCommas(No_Of_Lvl_Factory));
+          document.getElementById("No_Of_Lvl_Bank").innerHTML = (formatNumberWithCommas(No_Of_Lvl_Bank));
+          document.getElementById("BitCoinFarmCost").innerHTML = (formatNumberWithCommas(Math.round(BitCoinFarmCost)));
+          document.getElementById("BitcoinFarmsLifeTimeMoneyMade").innerHTML = (formatNumberWithCommas(Math.round(BitcoinFarmsLifeTimeMoneyMade)));
+          document.getElementById("upgradeCost4").innerHTML = (upgradeCost4 === "MAX") ? "MAX" : (formatNumberWithCommas(Math.round(upgradeCost4)));
+          document.getElementById("finalMathSpeed4").innerHTML = finalMathSpeed4;
+          document.getElementById("bitCoinFarms").innerHTML = bitCoinFarms;
+          document.getElementById("No_Of_Lvl_bitCoinFarm").innerHTML = No_Of_Lvl_bitCoinFarm;
+          document.getElementById("GiftMoney").innerHTML = (formatNumberWithCommas(Math.round(GiftMoney)));
+          document.getElementById("WorkersCashPerSec").innerHTML = (formatNumberWithCommas(Math.round(WorkersCashPerSec)));
+          document.getElementById("factorysCashPerSec").innerHTML = (formatNumberWithCommas(Math.round(factorysCashPerSec)));
+          document.getElementById("banksCashPerSec").innerHTML = (formatNumberWithCommas(Math.round(banksCashPerSec)));
+          document.getElementById("bitCoinFarmsCashPerSec").innerHTML = (formatNumberWithCommas(Math.round(bitCoinFarmsCashPerSec)));
+          document.getElementById("casinosCashPerSec").innerHTML = (formatNumberWithCommas(Math.round(casinosCashPerSec)));
+          document.getElementById("bossHealth").innerHTML = bossHealth;
+          document.getElementById("bossHealth2").innerHTML = bossHealth2;
+          document.getElementById("BossesKilled").innerHTML = BossesKilled;
+          document.getElementById("BossesKilled2").innerHTML = BossesKilled2;
+
+          document.getElementById("no_of_units").innerHTML = no_of_units;
+          document.getElementById("MAX_NUM_UNITS").innerHTML = MAX_NUM_UNITS;
+          document.getElementById("UnitUpgradeCost").innerHTML = (formatNumberWithCommas(Math.round(UnitUpgradeCost)));
+          document.getElementById("gold").innerHTML = (formatNumberWithCommas(Math.round(gold)));
+          document.getElementById("bossRewardValue2").innerHTML = (formatNumberWithCommas(Math.round(bossRewardValue2)));
+          document.getElementById("bossRewardValue").innerHTML = (formatNumberWithCommas(Math.round(bossRewardValue)));
+
+          
+
+      }
+      
+      
+      function sellCasino(){
+        if (casinos >= 1){
+          casinos -= 1;
+            no_of_units -= 1;
+            
+        casinoCost /= 2.4; 
+        money += (casinoCost * 0.7); // Return some money for selling
+
+          updateThese();
+          saveData();
+          
+          if (casinos == 0){
+        document.getElementById("sellcasinoButton").style.display = "none";
+        
+      }
+      
+    }
+  }
+  
+      function sellBitcoinFarm(){
+        if (bitCoinFarms >= 1){
+          bitCoinFarms -= 1;
+            no_of_units -= 1;
+
+        BitCoinFarmCost /= 1.8; 
+        money += (BitCoinFarmCost * 0.7); // Return some money for selling
+        updateThese(); // Update the display
+          
+          updateThese();
+          saveData();
+          
+          if (bitCoinFarms == 0){
+        document.getElementById("sellBitcoinFarmButton").style.display = "none";
+        
+      }
+      
+    }
+  }
+  
+
+
+      function buyUpgradeSpeed(){
+        if (money >= upgradeCost && finalMathSpeed > 200){             
+            money -= upgradeCost;            
+            upgradeCost = upgradeCost * 2.4;        
+            speedOneCount = speedOneCount - 200;
+             SpeedUpgradeInt = SpeedUpgradeInt + 1;
+             No_Of_Lvl_Printer += 1;
+             
+          finalMathSpeed = speedOne + speedOneCount;
+
+         clearInterval(workerInterval);
+
+
+        workerInterval = setInterval(workersMakesMoney, finalMathSpeed);
+         saveData();
+         updateThese();
+         
+         
+         if(finalMathSpeed == 200){
+           buyUpgradeSpeed = null;
+           upgradeCost = "MAX";
+         updateThese();
+         }
+         
+  
+        }
+        
+      }
+      function buyUpgradeSpeed2(){
+        if (money >= upgradeCost2){
+          money -= upgradeCost2;
+          upgradeCost2 *= 2.7;
+          finalMathSpeed2 -= 200;
+          No_Of_Lvl_Factory += 1;
+
+          clearInterval(factoryInterval);
+          factoryInterval = setInterval(FactoryMakesMoney, finalMathSpeed2);
+          
+          updateThese();
+          saveData();
+          
+            if (finalMathSpeed2 == 200){
+              buyUpgradeSpeed2 = null;
+              upgradeCost2 = "MAX";
+              updateThese();
+            }
+        }
+      }
+      
+
+      
+      
+      function buyUpgradeSpeed3(){
+        if (money >= upgradeCost3){
+          money -= upgradeCost3;
+          upgradeCost3 *= 3.2;
+          finalMathSpeed3 -= 200;
+          No_Of_Lvl_Bank += 1;
+          
+          clearInterval(bankInterval);
+          bankInterval = setInterval(bankMakesMoney, finalMathSpeed3);
+         
+          updateThese();
+          saveData();
+          
+            if (finalMathSpeed3 == 200){
+              buyUpgradeSpeed3 = null;
+              upgradeCost3 = "MAX";
+              updateThese();
+            }
+      }
+  }
+  
+        function buyUpgradeSpeed5(){
+          if (money >= upgradeCost5){
+          money -= upgradeCost5;
+          upgradeCost5 *= 3.8;
+          No_Of_Lvl_casino += 1;
+          finalMathSpeed5 -= 200;
+          
+          clearInterval(casinoInterval);
+          casinoInterval = setInterval(casinoMakesMoney, finalMathSpeed5);
+          
+          updateThese();
+          saveData();
+          
+          if (finalMathSpeed5 == 200){
+              buyUpgradeSpeed5 = null;
+              upgradeCost5 = "MAX";
+              updateThese();
+            }
+        }
+    }
+        function buyUpgradeSpeed4(){
+        if (money >= upgradeCost4){
+          money -= upgradeCost4;
+          upgradeCost4 *= 3.4;
+          No_Of_Lvl_bitCoinFarm += 1;
+          finalMathSpeed4 -= 200;
+          
+          
+          
+          clearInterval(bitcoinFarmInterval);
+          bitcoinFarmInterval = setInterval(bitcoinMakesMoney, finalMathSpeed4);
+          
+          updateThese();
+          saveData();
+          
+            if (finalMathSpeed4 == 200){
+              buyUpgradeSpeed4 = null;
+              upgradeCost4 = "MAX";
+              updateThese();
+            }
+        }
+      }
+      
+      function buyUnitUpgrade(){
+        if(gold >= UnitUpgradeCost){
+          gold -= UnitUpgradeCost;
+          UnitUpgradeCost *= 1.4;
+         MAX_NUM_UNITS += 15;
+         
+         updateThese();
+         saveData();
+        }
+      }
+      
+      function resetPlusMoneyBox(){
+        GiftMoney = 0;
+
+        document.getElementById('BossSummonedBox').style.display = 'none';
+        document.getElementById('giftDisplayMoney').style.display = 'none';
+        document.getElementById("victoryBox").style.display = "none";
+        document.getElementById("lossBox").style.display = "none";
+        document.getElementById("levelBonusBox").style.display = "none";
+
+
+
+          updateThese();
+          
+          if (no_of_units < MAX_NUM_UNITS){
+              document.getElementById("unitsBox").style.color = "black";
+
+          }
+          
+      }
+      
+      function UnitMAXXED(){
+                if (no_of_units === MAX_NUM_UNITS){
+              document.getElementById("unitsBox").style.color = "red";
+            }  
+      }
+      
+      function levelUpBonus(){
+
+      if(playerLvl == 1 && !hasrun){
+        document.getElementById("levelBonusBox").style.display = "block";
+        document.getElementById("levelUpBonus").textContent = (formatNumberWithCommas(Math.round(8500 * moneyMultiplier)));
+        document.getElementById("levelUpBonusGold").textContent = 25;
+        money += 8500 * moneyMultiplier;
+        gold += 25;
+        hasrun = true;
+        updateThese();
+
+      }
+      }
+      
+      function levelUpBonus2(){
+
+      if(playerLvl == 2 && !hasrun2){
+        document.getElementById("levelBonusBox").style.display = "block";
+        document.getElementById("levelUpBonus").textContent = (formatNumberWithCommas(Math.round(25000 * moneyMultiplier)));
+        document.getElementById("levelUpBonusGold").textContent = 50;
+        gold += 50;
+        money += 25000 * moneyMultiplier;
+        hasrun2 = true;
+        updateThese();
+
+      }
+  }
+      
+      function levelUpBonus3(){
+
+      if(playerLvl == 3 && !hasrun3){
+        document.getElementById("levelBonusBox").style.display = "block";
+        document.getElementById("levelUpBonus").textContent = (formatNumberWithCommas(Math.round(30000 * moneyMultiplier)));
+        document.getElementById("levelUpBonusGold").textContent = 75;
+        gold += 75;
+        money += 30000 * moneyMultiplier;
+        hasrun3 = true;
+        updateThese();
+
+      }
+  }
+      function levelUpBonus4(){
+
+      if(playerLvl == 4 && !hasrun4){
+        document.getElementById("levelBonusBox").style.display = "block";
+        document.getElementById("levelUpBonus").textContent = (formatNumberWithCommas(Math.round(50000 * moneyMultiplier)));
+        document.getElementById("levelUpBonusGold").textContent = 95;
+        gold += 95;
+        money += 50000 * moneyMultiplier;
+        hasrun4 = true;
+        updateThese();
+
+      }
+  }      
+      function levelUpBonus5(){
+
+      if(playerLvl == 5 && !hasrun5){
+        document.getElementById("levelBonusBox").style.display = "block";
+        document.getElementById("levelUpBonus").textContent = (formatNumberWithCommas(Math.round(70000 * moneyMultiplier)));
+        document.getElementById("levelUpBonusGold").textContent = 125;
+        gold += 125;
+        money += 70000 * moneyMultiplier;
+        hasrun5 = true;
+        updateThese();
+
+      }
+  }
+      function levelUpBonus6(){
+
+      if(playerLvl == 6 && !hasrun6){
+        document.getElementById("levelBonusBox").style.display = "block";
+        document.getElementById("levelUpBonus").textContent = (formatNumberWithCommas(Math.round(90000 * moneyMultiplier)));
+        document.getElementById("levelUpBonusGold").textContent = 175;
+        gold += 175;
+        money += 90000 * moneyMultiplier;
+        hasrun6 = true;
+        updateThese();
+
+      }
+  }      
+        function start(){
+        
+        workerInterval = setInterval(workersMakesMoney, finalMathSpeed);
+        factoryInterval = setInterval(FactoryMakesMoney, finalMathSpeed2);
+        bankInterval = setInterval(bankMakesMoney, finalMathSpeed3);
+        bitcoinFarmInterval = setInterval(bitcoinMakesMoney, finalMathSpeed4);
+        casinoInterval = setInterval(casinoMakesMoney, finalMathSpeed5);
+        
+        setInterval(levelUpBonus, 900);
+        setInterval(levelUpBonus2, 900);
+        setInterval(levelUpBonus3, 900);
+        setInterval(levelUpBonus4, 900);
+        setInterval(levelUpBonus5, 900);
+        setInterval(levelUpBonus6, 900);
+                
+        setInterval(resetPlusMoneyBox, 6800);
+        setInterval(saveData, 900);
+        setInterval(createGiftBox, 900000);
+        setInterval(createGiftBox2, 1300000);
+        setInterval(createBoss2, 5500000);
+        setInterval(createBoss, 2400000);
+        setInterval(UnitMAXXED, 2000);
+
+        setInterval(TimeSeconds, 1000);
+        setInterval(TimeMinutes, 60000);
+        setInterval(TimeHours, 3600000);
+        
+        
+        setInterval(resetingMoney, 5000);
+        
+        updateThese();
+      
+      
+
+      
+      }
+      
+      start();
+     loadData();
+     
+     
+
+      function showUpgradesorHide(){
+        if(display === 1){
+          Upgradesdiv.style.display = "block";
+          display = 0;
+          document.getElementById("img77Size").style.display = "block";
+          document.getElementById("container1").style.display = "block";
+          document.getElementById("info1but").style.display = "block";  
+          document.getElementById('upgadeCollective').style.display = 'block';
+          document.getElementById('UpgradesStat').style.display = 'block';
+          document.getElementById('container4').style.display = 'block';
+          document.getElementById('container465').style.display = 'block';
+          document.getElementById('img81Size').style.display = 'block';
+          document.getElementById('img812Size').style.display = 'block';
+          document.getElementById('collective').style.display = 'none';
+           document.getElementById('bossStat').style.display = 'none';
+          document.getElementById('img9Size').style.display = 'none';
+          document.getElementById('img105Size').style.display = 'none';
+          document.getElementById('img11Size').style.display = ' none';
+
+
+
+          
+        }else{
+          Upgradesdiv.style.display = 'none';
+          display = 1;
+           document.getElementById('upgadeCollective').style.display = 'none';
+          document.getElementById('UpgradesStat').style.display = 'none';
+          document.getElementById('container4').style.display = 'none';
+          document.getElementById('container465').style.display = 'none';
+          document.getElementById('img81Size').style.display = 'none';
+          document.getElementById('img812Size').style.display = 'none';
+          document.getElementById('collective').style.display = 'block';
+          document.getElementById('bossStat').style.display = 'none';
+          document.getElementById('img9Size').style.display = 'block';
+          document.getElementById('img105Size').style.display = 'block';
+          document.getElementById('img11Size').style.display = 'block';
+
+
+          
+}
+}
+      function showBossStatorHide(){
+        if(display === 1){
+          bossdiv.style.display = "block";
+          display = 0;
+          document.getElementById("img77Size").style.display = "block";
+          document.getElementById("container1").style.display = "block";
+          document.getElementById("info1but").style.display = "block";                    document.getElementById('collective').style.display = 'none';
+          document.getElementById('bossStat').style.display = 'none';
+          document.getElementById('upgadeCollective').style.display = 'none';
+          document.getElementById('collective').style.display = 'block';
+
+
+        }else{
+          bossdiv.style.display = 'none';
+          display = 1;
+          document.getElementById('bossStat').style.display = 'block';
+          document.getElementById('upgadeCollective').style.display = 'none';
+          document.getElementById('collective').style.display = 'block';
+          document.getElementById("img77Size").style.display = "none";
+          document.getElementById("container1").style.display = "none";
+          document.getElementById("info1but").style.display = "none";
+        }
+      }
+      
+      function showInfo5orHide(){
+        if (display === 1){
+          info5div.style.display = "block";
+          display = 0;
+      }else{
+        info5div.style.display = "none";
+          display = 1;
+          
+          
+          
+          info1div.style.display = "none";
+          display = 1;
+          Settingsdiv.style.display = "none";
+          display = 1;
+          info2div.style.display = "none";
+          display = 1;
+          statsdiv.style.display = "none";
+          display = 1;
+          info3div.style.display = "none";
+          display = 1;
+          info4div.style.display = "none";
+          display = 1;
+      }
+}
+
+
+
+      function showInfo4orHide(){
+        if (display === 1){
+          info4div.style.display = "block";
+          display = 0;
+        }else{
+          
+          info1div.style.display = "none";
+          display = 1;
+          Settingsdiv.style.display = "none";
+          display = 1;
+          info2div.style.display = "none";
+          display = 1;
+          statsdiv.style.display = "none";
+          display = 1;
+          info3div.style.display = "none";
+          display = 1;
+          info4div.style.display = "none";
+          display = 1;
+           info5div.style.display = "none";
+          display = 1;
+        }
+      }
+      
+      
+      
+      function showInfo3orHide(){
+        if (display === 1){
+          info3div.style.display = "block";
+          display = 0;
+          
+        }else{
+          info3div.style.display = "none";
+          display = 1;
+          info1div.style.display = "none";
+          display = 1;
+          Settingsdiv.style.display = "none";
+          display = 1;
+          info2div.style.display = "none";
+          display = 1;
+          statsdiv.style.display = "none";
+          display = 1;
+          info4div.style.display = "none";
+          display = 1;
+           info5div.style.display = "none";
+          display = 1;
+        }
+      }
+      
+      
+      
+      function showInfo2orHide(){
+        if (display === 1){
+          info2div.style.display = "block";
+          display = 0;
+
+          
+        } else {
+          info1div.style.display = "none";
+          display = 1;
+          Settingsdiv.style.display = "none";
+          display = 1;
+          info2div.style.display = "none";
+          display = 1;
+          statsdiv.style.display = "none";
+          display = 1;
+          info3div.style.display = "none";
+          display = 1;
+          info4div.style.display = "none";
+          display = 1;
+           info5div.style.display = "none";
+          display = 1;
+        }
+        
+        
+      }
+      
+      
+      
+      function showSettingsorHide(){
+        if (display === 1){
+          Settingsdiv.style.display = "block";
+          display = 0;
+          
+        } else {
+          
+          info1div.style.display = "none";
+          display = 1;
+          Settingsdiv.style.display = "none";
+          display = 1;
+          info2div.style.display = "none";
+          display = 1;
+          statsdiv.style.display = "none";
+          display = 1;
+          info3div.style.display = "none";
+          display = 1;
+          info4div.style.display = "none";
+          display = 1;
+           info5div.style.display = "none";
+          display = 1;
+        }
+        
+        
+      }
+      
+      
+      
+      
+      function showStatsorHide(){
+        if (display === 1){
+          statsdiv.style.display = "block";
+          display = 0;
+          
+        } else {
+          
+          info1div.style.display = "none";
+          display = 1;
+          Settingsdiv.style.display = "none";
+          display = 1;
+          info2div.style.display = "none";
+          display = 1;
+          statsdiv.style.display = "none";
+          display = 1;
+          info3div.style.display = "none";
+          display = 1;
+          info4div.style.display = "none";
+          display = 1;
+           info5div.style.display = "none";
+          display = 1;
+        }
+        
+        
+      }
+      
+      
+      
+      
+      function showInfo1orHide(){
+        if (display === 1){
+          info1div.style.display = "block";
+          display = 0;
+
+          
+        } else {
+          
+          info1div.style.display = "none";
+          display = 1;
+          Settingsdiv.style.display = "none";
+          display = 1;
+          info2div.style.display = "none";
+          display = 1;
+          statsdiv.style.display = "none";
+          display = 1;
+          info3div.style.display = "none";
+          display = 1;
+          info4div.style.display = "none";
+          display = 1;
+           info5div.style.display = "none";
+          display = 1;
+        }
+        
+        
+      }
+      
+      
+      
+      </script>
+           
+            
+      </body>
+    
+  </html>
+  
+  
+  
